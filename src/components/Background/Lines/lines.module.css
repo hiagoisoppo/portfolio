@@ -1,0 +1,147 @@
+.topLeft {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 1vh;
+  width: .10vw;
+  height: 1vh;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveRightX;
+}
+
+.leftTop {
+  position: fixed;
+  z-index: -10;
+  top: 1vh;
+  left: 0;
+  width: 1vh;
+  height: .10vw;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveDownY;
+}
+
+.botLeft {
+  position: fixed;
+  z-index: -10;
+  bottom: 0;
+  left: 1vh;
+  width: .10vw;
+  height: 1vh;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveRightX;
+}
+
+.leftBot {
+  position: fixed;
+  z-index: -10;
+  bottom: 1vh;
+  left: 0;
+  width: 1vh;
+  height: .10vw;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveUpY;
+}
+
+.botRight {
+  position: fixed;
+  z-index: -10;
+  bottom: 0;
+  right: 1vh;
+  width: .10vw;
+  height: 1vh;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveLeftX;
+}
+
+.rightBot {
+  position: fixed;
+  z-index: -10;
+  bottom: 1vh;
+  right: 0;
+  width: 1vh;
+  height: .10vw;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveUpY;
+}
+
+.topRight {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  right: 1vh;
+  width: .10vw;
+  height: 1vh;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveLeftX;
+}
+
+.rightTop {
+  position: fixed;
+  z-index: -10;
+  top: 1vh;
+  right: 0;
+  width: 1vh;
+  height: .10vw;
+  background: var(--secondary-color);
+  animation: 10s ease-in-out infinite moveDownY;
+}
+
+@keyframes moveDownY{
+  0% {
+    transform: translateY(0);
+    opacity: var(--background-opacity);
+  }
+  50% {
+    transform: translateY(55vh);
+    opacity: 0;
+  }
+  0% {
+    transform: translateY(0);
+    opacity: var(--background-opacity);
+  }
+}
+
+@keyframes moveUpY{
+  0% {
+    transform: translateY(0);
+    opacity: var(--background-opacity);
+  }
+  50% {
+    transform: translateY(-55vh);
+    opacity: 0;
+  }
+  0% {
+    transform: translateY(0);
+    opacity: var(--background-opacity);
+  }
+}
+
+@keyframes moveRightX{
+  0% {
+    transform: translateX(0);
+    opacity: var(--background-opacity);
+  }
+  50% {
+    transform: translateX(55vw);
+    opacity: 0;
+  }
+  0% {
+    transform: translateX(0);
+    opacity: var(--background-opacity);
+  }
+}
+
+@keyframes moveLeftX{
+  0% {
+    transform: translateX(0);
+    opacity: var(--background-opacity);
+  }
+  50% {
+    transform: translateX(-55vw);
+    opacity: 0;
+  }
+  0% {
+    transform: translateX(0);
+    opacity: var(--background-opacity);
+  }
+}

@@ -1,0 +1,114 @@
+.navmenu ul{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: end;
+  justify-content: center;
+  transition: all .3s;
+}
+
+.link {
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+  align-items: center;
+  transition: all .3s;
+  font-size: .8rem;
+  gap: .25rem;
+  width: 10vw;
+  height: 1.2rem;
+  opacity: .5;
+  text-transform: uppercase;
+}
+
+.link a {
+  text-align: end;
+  display: block;
+  width: 10vw;
+}
+
+.link::after {
+  content: '';
+  display: block;
+  width: .1rem;
+  height: 100%;
+  background: var(--secondary-color);
+  transition: all .3s;
+}
+
+/* HOVER DO MENU */
+.link:hover {
+  height: 2rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  width: 9vw;
+  opacity: 1;
+  background-color: var(--secondary-color);
+}
+
+.link:hover::after {
+  background: var(--tertiary-color);
+  width: .5rem;
+  margin-left: 0;
+  transform: translateX(-9.2vw);
+  animation: 750ms ease-in-out infinite blink;
+}
+/* MARCADOR DE CLICK OU DE POSICIONAMENTO DA TELA */
+.mark {
+  height: 2rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  width: 9vw;
+  opacity: 1;
+  background-color: var(--secondary-color);
+}
+
+.mark::after {
+  background: var(--tertiary-color);
+  width: .5rem;
+  margin-left: 0;
+  transform: translateX(-9.2vw);
+  animation: 750ms ease-in-out infinite blink;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--background-opacity);
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: var(--background-opacity);
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: var(--background-opacity);
+  }
+  45% {
+    opacity: 0;
+  }
+  90% {
+    opacity: var(--background-opacity);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

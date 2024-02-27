@@ -1,0 +1,55 @@
+.sidebar {
+  position: fixed;
+  z-index: -10;
+  bottom: 1rem;
+  left: 1rem;
+  width: .10vw;
+  height: 5vh;
+  background-color: var(--secondary-color); 
+  animation: 750ms ease-in-out infinite blink;
+}
+
+.console {
+  position: fixed;
+  z-index: -10;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  bottom: 1rem;
+  left: calc(1rem + .5vw);
+  height: 5vh;
+  color: var(--secondary-color);
+  opacity: var(--background-opacity);
+  font-size: var(--background-font-size);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--background-opacity);
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: var(--background-opacity);
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: var(--background-opacity);
+  }
+  45% {
+    opacity: 0;
+  }
+  90% {
+    opacity: var(--background-opacity);
+  }
+  100% {
+    opacity: 0;
+  }
+}
