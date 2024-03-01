@@ -4,7 +4,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Background from "@/components/Background/Background";
 import Header from "@/components/Header/Header";
 
-
 export const metadata: Metadata = {
   title: "HIT | Portfolio",
   description: "Personal page of Hiago Isoppo Trajano",

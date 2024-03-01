@@ -13,10 +13,10 @@
   justify-content: end;
   align-items: center;
   transition: all .3s;
-  font-size: .8rem;
-  gap: .25rem;
-  width: 10vw;
-  height: 1.2rem;
+  font-size: 1rem;
+  gap: .4rem;
+  width: 15vw;
+  height: 1.8rem;
   opacity: .5;
   text-transform: uppercase;
 }
@@ -24,7 +24,7 @@
 .link a {
   text-align: end;
   display: block;
-  width: 10vw;
+  width: 15vw;
 }
 
 .link::after {
@@ -37,13 +37,19 @@
 }
 
 /* HOVER DO MENU */
+.link:hover a {
+  text-align: center;
+}
+
 .link:hover {
-  height: 2rem;
+  height: 2.5rem;
   color: var(--primary-color);
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 9vw;
   opacity: 1;
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(to right, var(--secondary-color), transparent);
+  background-size: 120% 100%;
+  animation: 8s ease infinite gradient;
 }
 
 .link:hover::after {
@@ -55,12 +61,18 @@
 }
 /* MARCADOR DE CLICK OU DE POSICIONAMENTO DA TELA */
 .mark {
-  height: 2rem;
+  height: 2.5rem;
   color: var(--primary-color);
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 9vw;
   opacity: 1;
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(to right, var(--secondary-color), transparent);
+  background-size: 120% 100%;
+  animation: 8s ease infinite gradient;
+}
+
+.mark a {
+  text-align: center;
 }
 
 .mark::after {
@@ -103,12 +115,12 @@
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 30% 50%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 80% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 30% 50%;
 	}
 }

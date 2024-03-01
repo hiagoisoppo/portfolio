@@ -1,0 +1,103 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  /* animation: 5s ease-in-out infinite blink; */
+}
+
+.container:hover {
+  animation: 5s ease-in-out infinite blink;
+}
+
+.container:hover .triangle::before, .container:hover .triangle::after {
+  animation: 5s ease-in-out infinite blinkIn;
+}
+
+.triangle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: var(--primary-color);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 90%,10% 70%, 10% 30%, 20% 25%, 20% 65%, 40% 75%, 40% 50%, 60% 60%, 60% 85%);
+  /* animation: 5s ease-in-out infinite blinkIn; */
+}
+
+.triangle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: var(--primary-color);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 90%,10% 70%, 10% 30%, 20% 25%, 20% 65%, 40% 75%, 40% 50%, 60% 60%, 60% 85%);
+  transform: rotate(180deg);
+  /* animation: 5s ease-in-out infinite blinkIn; */
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--primary-color);
+  }
+  45% {
+    background-color: var(--tertiary-color);
+  }
+  50% {
+    background-color: var(--primary-color);
+  }
+  62% {
+    background-color: var(--tertiary-color);
+  }
+  65% {
+    background-color: var(--primary-color);
+  }
+  72% {
+    background-color: var(--tertiary-color);
+  }
+  75% {
+    background-color: var(--primary-color);
+  }
+  90% {
+    background-color: var(--tertiary-color);
+  }
+  100% {
+    background-color: var(--primary-color);
+  }
+}
+
+@keyframes blinkIn {
+  0% {
+    background-color: var(--secondary-color);
+  }
+  45% {
+    background-color: var(--primary-color);
+  }
+  50% {
+    background-color: var(--secondary-color);
+  }
+  62% {
+    background-color: var(--primary-color);
+  }
+  65% {
+    background-color: var(--secondary-color);
+  }
+  72% {
+    background-color: var(--primary-color);
+  }
+  75% {
+    background-color: var(--secondary-color);
+  }
+  90% {
+    background-color: var(--primary-color);
+  }
+  100% {
+    background-color: var(--secondary-color);
+  }
+}

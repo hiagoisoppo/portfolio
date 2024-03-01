@@ -1,35 +1,7 @@
-.home {
+.main {
   display: flex;
-  align-items: center;
+  flex-flow: column;
   justify-content: center;
-  height: 85vh;
-  width: 90vw;
-  border: 1px solid goldenrod;
-}
-
-.about {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  height: 85vh;
-  width: 90vw;
-  border: 1px solid red;
-}
-
-.projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
-  width: 90vw;
-  border: 1px solid greenyellow;
-}
-
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
-  width: 90vw;
-  border: 1px solid goldenrod;
+  gap: 10rem;
 }
