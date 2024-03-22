@@ -1,9 +1,19 @@
 import styles from "./aboutpage.module.css";
+import Image from 'next/image';
+import photo from '@/assets/photoTest.png';
 
 export default function AboutPage() {
   return (
     <section id="ABOUT" className={styles.about}>
-      <div className={styles.image}>FOTINHA</div>
+      <div className={styles.image}>
+        <Image 
+          src={photo}
+          alt="Foto de perfil"
+          className={styles.photo}
+        />
+        <span className={styles.symbol}></span>
+        <span className={styles.emblem}></span>
+      </div>
       <article className={styles.content}>
         <div className={styles.aboutWrapper}>
           <h2>SOBRE MIM</h2>
