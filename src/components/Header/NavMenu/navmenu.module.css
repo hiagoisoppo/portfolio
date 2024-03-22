@@ -1,7 +1,7 @@
 .navmenu ul{
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 1rem;
   align-items: end;
   justify-content: center;
   transition: all .3s;
@@ -13,10 +13,10 @@
   justify-content: end;
   align-items: center;
   transition: all .3s;
-  font-size: 1rem;
-  gap: .4rem;
-  width: 15vw;
-  height: 1.8rem;
+  font-size: 1.5rem;
+  gap: .5rem;
+  width: 10rem;
+  height: 1.5rem;
   opacity: .5;
   text-transform: uppercase;
 }
@@ -24,13 +24,13 @@
 .link a {
   text-align: end;
   display: block;
-  width: 15vw;
+  width: 18.5rem;
 }
 
 .link::after {
   content: '';
   display: block;
-  width: .1rem;
+  width: .3rem;
   height: 100%;
   background: var(--secondary-color);
   transition: all .3s;
@@ -42,33 +42,33 @@
 }
 
 .link:hover {
-  height: 2.5rem;
+  height: 4rem;
   color: var(--primary-color);
-  font-size: 1.5rem;
-  width: 9vw;
+  font-size: 2rem;
+  width: 17rem;
   opacity: 1;
   background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 120% 100%;
-  animation: 8s ease infinite gradient;
+  background-size: 150% 100%;
+  animation: 3s ease-in-out infinite gradient;
 }
 
 .link:hover::after {
   background: var(--tertiary-color);
   width: .5rem;
   margin-left: 0;
-  transform: translateX(-9.2vw);
+  transform: translateX(-17.5rem);
   animation: 750ms ease-in-out infinite blink;
 }
 /* MARCADOR DE CLICK OU DE POSICIONAMENTO DA TELA */
 .mark {
-  height: 2.5rem;
+  height: 4rem;
   color: var(--primary-color);
-  font-size: 1.5rem;
-  width: 9vw;
+  font-size: 2rem;
+  width: 17rem;
   opacity: 1;
   background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 120% 100%;
-  animation: 8s ease infinite gradient;
+  background-size: 150% 100%;
+  animation: 3s ease-in-out infinite gradient;
 }
 
 .mark a {
@@ -79,7 +79,7 @@
   background: var(--tertiary-color);
   width: .5rem;
   margin-left: 0;
-  transform: translateX(-9.2vw);
+  transform: translateX(-17.5rem);
   animation: 750ms ease-in-out infinite blink;
 }
 
@@ -114,13 +114,15 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 30% 50%;
-	}
-	50% {
-		background-position: 80% 50%;
-	}
-	100% {
-		background-position: 30% 50%;
-	}
+  0% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 75% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }

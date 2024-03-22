@@ -6,9 +6,12 @@
   --secondary-color: white;
   --tertiary-color: yellow;
   /* EFFECTS */
-  --background-opacity: 0.5;
+  --background-opacity: .5;
+  --primary-color-op: rgba(0, 0, 0, .5);
+  --secondary-color-op: rgba(255, 255, 255, .5);
+  --tertiary-color-op: rgba(255, 255, 0, .5);
   /* FONTES */
-  --background-font-size: .7rem;
+  --background-font-size: 1rem;
 }
 
 html {
@@ -17,6 +20,7 @@ html {
   font-family: "Anta", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 10px;
 }
 
 body {
@@ -40,4 +44,5 @@ a {
 
 ul {
   margin: 0;
+  padding: 0;
 }

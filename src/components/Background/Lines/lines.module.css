@@ -2,9 +2,9 @@
   position: fixed;
   z-index: -10;
   top: 0;
-  left: 1vh;
-  width: .10vw;
-  height: 1vh;
+  left: 1rem;
+  width: .2rem;
+  height: 1rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveRightX;
 }
@@ -12,10 +12,10 @@
 .leftTop {
   position: fixed;
   z-index: -10;
-  top: 1vh;
+  top: 1rem;
   left: 0;
-  width: 1vh;
-  height: .10vw;
+  width: 1rem;
+  height: .2rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveDownY;
 }
@@ -24,9 +24,9 @@
   position: fixed;
   z-index: -10;
   bottom: 0;
-  left: 1vh;
-  width: .10vw;
-  height: 1vh;
+  left: 1rem;
+  width: .2rem;
+  height: 1rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveRightX;
 }
@@ -34,10 +34,10 @@
 .leftBot {
   position: fixed;
   z-index: -10;
-  bottom: 1vh;
+  bottom: 1rem;
   left: 0;
-  width: 1vh;
-  height: .10vw;
+  width: 1rem;
+  height: .2rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveUpY;
 }
@@ -46,9 +46,9 @@
   position: fixed;
   z-index: -10;
   bottom: 0;
-  right: 1vh;
-  width: .10vw;
-  height: 1vh;
+  right: 1rem;
+  width: .2rem;
+  height: 1rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveLeftX;
 }
@@ -56,10 +56,10 @@
 .rightBot {
   position: fixed;
   z-index: -10;
-  bottom: 1vh;
+  bottom: 1rem;
   right: 0;
-  width: 1vh;
-  height: .10vw;
+  width: 1rem;
+  height: .2rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveUpY;
 }
@@ -68,9 +68,9 @@
   position: fixed;
   z-index: -10;
   top: 0;
-  right: 1vh;
-  width: .10vw;
-  height: 1vh;
+  right: 1rem;
+  width: .2rem;
+  height: 1rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveLeftX;
 }
@@ -78,10 +78,10 @@
 .rightTop {
   position: fixed;
   z-index: -10;
-  top: 1vh;
+  top: 1rem;
   right: 0;
-  width: 1vh;
-  height: .10vw;
+  width: 1rem;
+  height: .2rem;
   background: var(--secondary-color);
   animation: 10s ease-in-out infinite moveDownY;
 }
