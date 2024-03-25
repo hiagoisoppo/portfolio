@@ -52,6 +52,11 @@ export default function AboutPage() {
           </div>
         </div>
       </article>
+      <a href="#PROJECTS" className={styles.linkWrapper}>
+        Conheça meus projetos.
+        <div className={styles.bar}></div>
+        <div className={styles.arrow}></div>
+      </a>
     </section>
   );
 }
