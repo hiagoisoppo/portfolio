@@ -1,4 +1,4 @@
-import styles from "./aboutpage.module.css";
+import styles from "./skillspage.module.css";
 import Image from 'next/image';
 import photo from '@/assets/photoTest.png';
 import flagBRA from '@/assets/FlagBRA.png';
@@ -15,9 +15,9 @@ import iconRpg from '@/assets/iconRpg.png';
 import iconCode from '@/assets/iconCoding.png';
 import iconMovie from '@/assets/iconMovie.png';
 
-export default function AboutPage() {
+export default function SkillsPage() {
   return (
-    <section id="ABOUT" className={styles.about}>
+    <section id="SKILLS" className={styles.about}>
       <div className={styles.image}>
         <Image 
           src={photo}
@@ -31,19 +31,7 @@ export default function AboutPage() {
         <div className={styles.aboutWrapper}>
           <h2>SOBRE MIM</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-            ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
-            massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
-            nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit
-            amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat
-            in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero
-            pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo
-            in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue
-            blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede
-            pellentesque fermentum. Maecenas adipiscing ante non diam sodales
-            hendrerit.
+            HABILIDADES
           </p>
         </div>
         <div className={styles.languagesWrapper}>
