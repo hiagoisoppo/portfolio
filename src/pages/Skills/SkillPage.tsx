@@ -1,109 +1,124 @@
 import styles from "./skillspage.module.css";
 import Image from 'next/image';
-import photo from '@/assets/photoTest.png';
-import flagBRA from '@/assets/FlagBRA.png';
-import flagUSA from '@/assets/FlagUSA.png';
-import iconTs from '@/assets/IconTs.png';
-import iconCsharp from '@/assets/IconCsharp.png';
-import iconJs from '@/assets/IconJs.png';
-import iconPy from '@/assets/IconPy.png';
-import iconHtml from '@/assets/IconHtml.png';
-import iconSass from '@/assets/IconSass.png';
-import iconFamily from '@/assets/iconFamily.png';
-import iconGame from '@/assets/iconGaming.png';
-import iconRpg from '@/assets/iconRpg.png';
-import iconCode from '@/assets/iconCoding.png';
-import iconMovie from '@/assets/iconMovie.png';
+import iconNextJs from '@/assets/icons/nextjs.svg';
+import iconReact from '@/assets/icons/react.svg';
+import iconGit from '@/assets/icons/git.svg';
+import iconDocker from '@/assets/icons/docker.svg';
+import iconDotnet from '@/assets/icons/dotnet.svg';
+import iconNodejs from '@/assets/icons/nodejs.svg';
 
 export default function SkillsPage() {
   return (
-    <section id="SKILLS" className={styles.about}>
-      <div className={styles.image}>
-        <Image 
-          src={photo}
-          alt="Foto de perfil"
-          className={styles.photo}
-        />
-        <span className={styles.symbol}></span>
-        <span className={styles.emblem}></span>
-      </div>
+    <section id="SKILLS" className={styles.skills}>
       <article className={styles.content}>
+        <h2>Frontend</h2>
         <div className={styles.aboutWrapper}>
-          <h2>SOBRE MIM</h2>
-          <p>
-            HABILIDADES
-          </p>
-        </div>
-        <div className={styles.languagesWrapper}>
-          <div className={styles.languages}>
-            <h3>IDIOMAS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+              ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+              massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
+              nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit
+              amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat
+              in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero
+              pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo
+              in pede.
+            </p>
             <ul>
               <li>
                 <Image 
-                  src={flagBRA}
-                  alt="Bandeira do Brasil"
+                  src={iconNextJs}
+                  alt="Icone do NextJs"
                   className={styles.flags}
                   layout="center"
                 />
-                Português
+                Next.js
               </li>
               <li>
                 <Image 
-                  src={flagUSA}
-                  alt="Bandeira dos Estados Unidos"
+                  src={iconReact}
+                  alt="Icone do React"
                   className={styles.flags}
                 />
-                Inglês
+                React
               </li>
             </ul>
-          </div>
-          <div className={styles.technologies}>
-            <h3>HOBBIES</h3>
+        </div>
+      </article>
+
+      <article className={styles.content}>
+        <h2>Backend</h2>
+        <div className={styles.aboutWrapper}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+              ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+              massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
+              nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit
+              amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat
+              in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero
+              pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo
+              in pede.
+            </p>
             <ul>
               <li>
                 <Image 
-                  src={iconFamily}
-                  alt="Icone Representando a Familia"
+                  src={iconNodejs}
+                  alt="Icone do NodeJs"
                   className={styles.flags}
+                  layout="center"
                 />
-                Familia
+                NodeJs
               </li>
               <li>
                 <Image 
-                  src={iconGame}
-                  alt="Icone de Video Game"
+                  src={iconDotnet}
+                  alt="Icone do .Net"
                   className={styles.flags}
                 />
-                Jogos
-              </li>
-              <li>
-                <Image 
-                  src={iconRpg}
-                  alt="Icone de dado D20"
-                  className={styles.flags}
-                />
-                Rpg
-              </li>
-              <li>
-                <Image 
-                  src={iconCode}
-                  alt="Icone de uma matriz de código"
-                  className={styles.flags}
-                />
-                Codar
-              </li>
-              <li>
-                <Image 
-                  src={iconMovie}
-                  alt="Icone de tela de cinema e balde de pipoca"
-                  className={styles.flags}
-                />
-                Filmes
+                .Net
               </li>
             </ul>
-          </div>
         </div>
       </article>
+
+      <article className={styles.content}>
+        <h2>Segurança</h2>
+        <div className={styles.aboutWrapper}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+              ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+              massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
+              nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit
+              amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat
+              in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero
+              pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo
+              in pede.
+
+            </p>
+            <ul>
+              <li>
+                <Image 
+                  src={iconGit}
+                  alt="Icone do Git"
+                  className={styles.flags}
+                  layout="center"
+                />
+                Git
+              </li>
+              <li>
+                <Image 
+                  src={iconDocker}
+                  alt="Icone do Docker"
+                  className={styles.flags}
+                />
+                Docker
+              </li>
+            </ul>
+        </div>
+      </article>
+
       <a href="#PROJECTS" className={styles.linkWrapper}>
         Conheça meus projetos.
         <div className={styles.bar}></div>

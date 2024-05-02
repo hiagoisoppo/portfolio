@@ -114,19 +114,19 @@
 {
   width: 30%
 }
-.technologies {
+.hobbies {
   width: 65%;
 }
 
 .languages ul,
-.technologies ul {
+.hobbies ul {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
 .languages li,
-.technologies li {
+.hobbies li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +138,17 @@
   width: 5rem;
   margin-bottom: .5rem;
   border-radius: .5rem;
+  filter: grayscale(100%);
+}
+
+.hobbies li:hover,
+.languages li:hover {
+  color: var(--tertiary-color);
+}
+
+.hobbies li:hover img,
+.languages li:hover img  {
+  filter: grayscale(0%);
 }
 
 @keyframes gradient {

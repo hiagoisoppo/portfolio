@@ -69,7 +69,7 @@ export default function AboutPage() {
               </li>
             </ul>
           </div>
-          <div className={styles.technologies}>
+          <div className={styles.hobbies}>
             <h3>HOBBIES</h3>
             <ul>
               <li>

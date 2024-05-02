@@ -15,7 +15,7 @@
 }
 
 html {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   font-family: "Anta", sans-serif;
   font-weight: 400;
