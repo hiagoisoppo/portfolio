@@ -34,7 +34,7 @@ export default function SkillsPage() {
   return (
     <section id="SKILLS" className={styles.skills}>
       <article className={styles.content}>
-        <h2>Frontend</h2>
+        <h2>FRONTEND</h2>
         <div className={styles.aboutWrapper}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
@@ -125,7 +125,7 @@ export default function SkillsPage() {
       </article>
 
       <article className={styles.content}>
-        <h2>Backend</h2>
+        <h2>BACKEND</h2>
         <div className={styles.aboutWrapper}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
@@ -224,7 +224,7 @@ export default function SkillsPage() {
       </article>
 
       <article className={styles.content}>
-        <h2>Segurança</h2>
+        <h2>SEGURANÇA</h2>
         <div className={styles.aboutWrapper}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non

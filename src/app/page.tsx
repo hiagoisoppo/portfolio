@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./page.module.css";
 import HomePage from "@/pages/Home/HomePage";
 import AboutPage from "@/pages/About/AboutPage";
@@ -10,9 +9,9 @@ export default function Home() {
   return (
     <main className={style.main}>
       <HomePage />
-      <AboutPage />
       <SkillsPage />
       <ProjectsPage />
+      <AboutPage />
       <ContactPage />
     </main>
   );

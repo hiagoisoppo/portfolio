@@ -13,9 +13,9 @@
   justify-content: end;
   align-items: center;
   transition: all .3s;
-  font-size: 1.5rem;
+  font-size: 1rem;
   gap: .5rem;
-  width: 10rem;
+  width: 12rem;
   height: 1.5rem;
   opacity: .5;
   text-transform: uppercase;

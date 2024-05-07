@@ -12,13 +12,13 @@ export default function NavMenu() {
         case 'HOME':
           setMarkMenu([true, false, false, false, false]);
           break;
-        case 'ABOUT':
+        case 'SKILLS':
           setMarkMenu([false, true, false, false, false]);
           break;
-        case 'SKILLS':
+        case 'PROJECTS':
           setMarkMenu([false, false, true, false, false]);
           break;
-        case 'PROJECTS':
+        case 'ABOUT':
           setMarkMenu([false, false, false, true, false]);
           break;
         case 'CONTACT':
@@ -48,28 +48,28 @@ export default function NavMenu() {
 
         <li className={`${style.link} ${markMenu[1] ? style.mark : ''}`}>
           <a
-            href="#ABOUT"
+            href="#SKILLS"
             onClick={ () => setMarkMenu([false, true, false, false, false]) }
           >
-            Sobre
+            Habilidades
           </a>
         </li>
 
         <li className={`${style.link} ${markMenu[2] ? style.mark : ''}`}>
           <a
-            href="#SKILLS"
+            href="#PROJECTS"
             onClick={ () => setMarkMenu([false, false, true, false, false]) }
           >
-            Stacks
+            Projetos
           </a>
         </li>
 
         <li className={`${style.link} ${markMenu[3] ? style.mark : ''}`}>
           <a
-            href="#PROJECTS"
+            href="#ABOUT"
             onClick={ () => setMarkMenu([false, false, false, true, false]) }
           >
-            Projetos
+            Sobre
           </a>
         </li>
 

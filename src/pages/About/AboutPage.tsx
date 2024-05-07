@@ -3,12 +3,6 @@ import Image from 'next/image';
 import photo from '@/assets/photoTest.png';
 import flagBRA from '@/assets/FlagBRA.png';
 import flagUSA from '@/assets/FlagUSA.png';
-import iconTs from '@/assets/IconTs.png';
-import iconCsharp from '@/assets/IconCsharp.png';
-import iconJs from '@/assets/IconJs.png';
-import iconPy from '@/assets/IconPy.png';
-import iconHtml from '@/assets/IconHtml.png';
-import iconSass from '@/assets/IconSass.png';
 import iconFamily from '@/assets/iconFamily.png';
 import iconGame from '@/assets/iconGaming.png';
 import iconRpg from '@/assets/iconRpg.png';
@@ -116,8 +110,8 @@ export default function AboutPage() {
           </div>
         </div>
       </article>
-      <a href="#PROJECTS" className={styles.linkWrapper}>
-        Conheça meus projetos.
+      <a href="#CONTACT" className={styles.linkWrapper}>
+        Entre em contato.
         <div className={styles.bar}></div>
         <div className={styles.arrow}></div>
       </a>
