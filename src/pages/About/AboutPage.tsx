@@ -22,8 +22,8 @@ export default function AboutPage() {
         <span className={styles.emblem}></span>
       </div>
       <article className={styles.content}>
-        <div className={styles.aboutWrapper}>
           <h2>SOBRE MIM</h2>
+        <div className={styles.aboutWrapper}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
             risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
