@@ -96,7 +96,7 @@
   height: 100%;
   background-color: var(--tertiary-color-op);
   transform: translateY(1.5rem);
-  animation: 1500ms ease-in-out infinite blinkPhoto;
+  animation: 1500ms ease-in-out infinite blink;
 }
 
 @keyframes blink {

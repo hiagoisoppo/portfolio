@@ -1,13 +1,15 @@
+import Image from "next/image";
+import Slider from "@/components/Slider/Slider";
 import styles from "./projectspage.module.css";
 
 export default function ProjectsPage() {
   return (
     <section id="PROJECTS" className={styles.projects}>
-      <h1>PROJECTS</h1>
+      <Slider />
       <a href="#ABOUT" className={styles.linkWrapper}>
-        <div className={styles.arrow}></div>
+        Conheça mais sobre mim
         <div className={styles.bar}></div>
-        Explore meu portifólio
+        <div className={styles.arrow}></div>
       </a>
     </section>
   );

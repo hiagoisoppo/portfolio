@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 90%;
+  height: 75%;
+}
+
+.project {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 90%;
+  overflow: hidden;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.symbol {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, var(--secondary-color), transparent);
+  background-size: 100% 250%;
+  animation: 1500ms ease-in-out infinite olofote;
+}
+.project .symbol {
+  clip-path: polygon(0% 0%, 0% calc(100% - 2rem), 100% calc(100% - 2rem), 100% 0%);
+}
+.project:first-child .symbol {
+  clip-path: polygon(0% 0%, 0% 85%, 25% calc(100% - 2rem), 100% calc(100% - 2rem), 100% 0%);
+}
+.project:last-child  .symbol{
+  clip-path: polygon(0% 0%, 0% calc(100% - 2rem), 75% calc(100% - 2rem), 100% 85%, 100% 0%);
+}
+
+.emblem {
+  position: absolute;
+  clip-path: polygon(0% calc(100% - 1rem), 0% 100%, 100% 100%, 100% calc(100% - 1rem));
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary-color-op);
+  animation: 1500ms ease-in-out infinite blink;
+}
+.project:first-child .emblem {
+  clip-path: polygon(0% calc(85% + 1.5rem), 0% calc(85% + 3rem), calc(25% - 1rem) 100%, 100% 100%, 100% calc(100% - 1rem), calc(25% - .5rem) calc(100% - 1rem));
+}
+.project:last-child  .emblem{
+  clip-path: polygon(0% calc(100% - 1rem), 0% 100%, calc(75% + 1rem) 100%, 100% calc(85% + 3rem), 100% calc(85% + 1.5rem), calc(75% + .5rem) calc(100% - 1rem));
+}
+
+.project img {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.project h3 {
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  text-align: center;
+}
+.project p {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.project button {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+ /* HOVER EFFECTS */
+.project:hover {
+  flex-shrink: 0;
+}
+.project:hover .symbol {
+  clip-path: polygon(0% 0%, 0% calc(100% - 2rem), 100% calc(100% - 2rem), 100% 0%);
+  animation: none;
+}
+.project:hover:first-child .symbol {
+  clip-path: polygon(0% 0%, 0% 85%, 10% calc(100% - 2rem), 100% calc(100% - 2rem), 100% 0%);
+}
+.project:hover:last-child  .symbol{
+  clip-path: polygon(0% 0%, 0% calc(100% - 2rem), 90% calc(100% - 2rem), 100% 85%, 100% 0%);
+}
+
+.project:hover .emblem {
+  animation: none;
+}
+.project:hover:first-child .emblem {
+  clip-path: polygon(0% calc(85% + 1.5rem), 0% calc(85% + 3rem), calc(10% - 1rem) 100%, 100% 100%, 100% calc(100% - 1rem), calc(10% - .5rem) calc(100% - 1rem));
+}
+.project:hover:last-child  .emblem{
+  clip-path: polygon(0% calc(100% - 1rem), 0% 100%, calc(90% + 1rem) 100%, 100% calc(85% + 3rem), 100% calc(85% + 1.5rem), calc(90% + .5rem) calc(100% - 1rem));
+}
+
+.project:hover img {
+  opacity: 1;
+  width: 80%;
+  height: 60%;
+}
+
+.project:hover h3 {
+  transform: rotate(0deg);
+}
+.project:hover p {
+  opacity: 1;
+  width: fit-content;
+}
+.project:hover button {
+  opacity: 1;
+  width: fit-content;
+  height: fit-content;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--background-opacity);
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: var(--background-opacity);
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: var(--background-opacity);
+  }
+  45% {
+    opacity: 0;
+  }
+  90% {
+    opacity: var(--background-opacity);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes olofote {
+  0% {
+      background-size: 100% 200%;
+  }
+  10% {
+      background-size: 100% 250%;
+  }
+  20% {
+      background-size: 100% 200%;
+  }
+  30% {
+      background-size: 100% 250%;
+  }
+  35% {
+      background-size: 100% 200%;
+  }
+  40% {
+      background-size: 100% 250%;
+  }
+  45% {
+      background-size: 100% 200%;
+  }
+  90% {
+      background-size: 100% 250%;
+  }
+  100% {
+      background-size: 100% 200%;
+  }
+}
