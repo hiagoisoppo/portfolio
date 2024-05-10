@@ -8,8 +8,10 @@ export default function ProjectsPage() {
       <Slider />
       <a href="#ABOUT" className={styles.linkWrapper}>
         Conheça mais sobre mim
-        <div className={styles.bar}></div>
-        <div className={styles.arrow}></div>
+        <div>
+          <div className={styles.bar}></div>
+          <div className={styles.arrow}></div>
+        </div>
       </a>
     </section>
   );

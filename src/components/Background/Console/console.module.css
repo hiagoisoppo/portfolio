@@ -6,7 +6,8 @@
   width: .3rem;
   height: 5rem;
   background-color: var(--tertiary-color); 
-  animation: 750ms ease-in-out infinite blink;
+  animation: 3000ms ease-in-out infinite blink;
+  box-shadow: 0 0 2.5rem .4rem var(--tertiary-color-op);
 }
 
 .console {
@@ -26,30 +27,30 @@
 
 @keyframes blink {
   0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   10% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   20% {
-    opacity: 0;
+    opacity: 0.4;
   }
   30% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   35% {
-    opacity: 0;
+    opacity: 0.4;
   }
   40% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   45% {
-    opacity: 0;
+    opacity: 0.4;
   }
   90% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.4;
   }
 }

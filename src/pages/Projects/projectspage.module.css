@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 80vw;
+  width: 75vw;
   position: relative;
   flex-direction: column;
 }
@@ -12,7 +12,6 @@
   width: 10rem;
   height: .2rem;
   background-color: var(--tertiary-color);
-  animation: 1500ms ease-in-out infinite blink;
 }
 
 .arrow {
@@ -20,7 +19,6 @@
   width: 2rem;
   height: 2rem;
   clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-  animation: 1500ms ease-in-out infinite blink;
 }
 
 .linkWrapper {
@@ -35,40 +33,46 @@
   font-size: 2rem;
 }
 
-.linkWrapper:hover div{
-  background-color: var(--secondary-color);
-}
-
 .linkWrapper:hover {
   color: var(--tertiary-color);
 }
 
+.linkWrapper div:first-of-type {
+  filter: drop-shadow(0 .3rem .4rem var(--tertiary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  animation: 3000ms ease-in-out infinite blink;
+}
+
 @keyframes blink {
   0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   10% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   20% {
-    opacity: 0;
+    opacity: 0.4;
   }
   30% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   35% {
-    opacity: 0;
+    opacity: 0.4;
   }
   40% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   45% {
-    opacity: 0;
+    opacity: 0.4;
   }
   90% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.4;
   }
 }

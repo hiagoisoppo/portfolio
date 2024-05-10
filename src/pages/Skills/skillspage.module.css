@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 80vw;
+  width: 75vw;
   gap: 5rem;
   flex-direction: row;
 }
@@ -14,7 +14,7 @@
   justify-content: start;
   flex-direction: column;
   height: 70%;
-  width: 25%;
+  width: 30%;
   padding: 0;
   gap: 2rem;
 }
@@ -27,23 +27,47 @@
   height: 5rem;
   color: var(--primary-color);
   font-size: 2.5rem;
-  width: calc(95% - 1rem);
+  width: calc(100% - 1rem);
   opacity: 1;
   background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 120% 100%;
+  background-size: 200% 100%;
   animation: 8s ease infinite gradient;
 }
 
 .aboutWrapper {
   display: flex;
+  position: relative;
   align-items: start;
   justify-content: center;
   flex-direction: column;
   font-size: 1.4rem;
-  padding-left: 1.5rem;
-  border-left: .5rem solid var(--tertiary-color-op);
-  animation: 750ms ease-in-out infinite blink;
+  padding-left: 2.5rem;
   gap: 2rem;
+}
+
+.aboutWrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: .5rem;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  margin-top: 1rem;
+  animation: 3000ms ease-in-out infinite blink;
+}
+
+.aboutWrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: .5rem;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  margin-top: 1rem;
+  animation: 3000ms ease-in-out infinite blink;
+  box-shadow: 0 0 .5rem .3rem var(--tertiary-color-op);
 }
 
 .aboutWrapper p {
@@ -92,7 +116,7 @@
   }
 
   50% {
-    background-position: 75% 50%;
+    background-position: 90% 50%;
   }
 
   100% {
@@ -102,69 +126,31 @@
 
 @keyframes blink {
   0% {
-    border-left: .5rem solid transparent;
-  }
-
-  10% {
-    border-left: .5rem solid var(--tertiary-color-op);
-  }
-
-  20% {
-    border-left: .5rem solid transparent;
-  }
-
-  30% {
-    border-left: .5rem solid var(--tertiary-color-op);
-  }
-
-  35% {
-    border-left: .5rem solid transparent;
-  }
-
-  40% {
-    border-left: .5rem solid var(--tertiary-color-op);
-  }
-
-  45% {
-    border-left: .5rem solid transparent;
-  }
-
-  90% {
-    border-left: .5rem solid var(--tertiary-color-op);
-  }
-
-  100% {
-    border-left: .5rem solid transparent;
-  }
-}
-
-@keyframes blinkPhoto {
-  0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   10% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   20% {
-    opacity: 0;
+    opacity: 0.4;
   }
   30% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   35% {
-    opacity: 0;
+    opacity: 0.4;
   }
   40% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   45% {
-    opacity: 0;
+    opacity: 0.4;
   }
   90% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.4;
   }
 }
 
@@ -172,7 +158,6 @@
   width: 10rem;
   height: .2rem;
   background-color: var(--tertiary-color);
-  animation: 1500ms ease-in-out infinite blinkPhoto;
 }
 
 .arrow {
@@ -180,7 +165,6 @@
   width: 2rem;
   height: 2rem;
   clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-  animation: 1500ms ease-in-out infinite blinkPhoto;
 }
 
 .linkWrapper {
@@ -195,10 +179,16 @@
   font-size: 2rem;
 }
 
-.linkWrapper:hover div{
-  background-color: var(--secondary-color);
-}
-
 .linkWrapper:hover {
   color: var(--tertiary-color);
+}
+
+.linkWrapper div:first-of-type {
+  filter: drop-shadow(0 0 1rem var(--tertiary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  animation: 3000ms ease-in-out infinite blink;
 }

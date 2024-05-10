@@ -10,12 +10,18 @@
   align-items: start;
 }
 
-.h1 {
+.name {
   color: var(--secondary-color);
   margin: 0;
   font-size: 2.5rem;
-  opacity: var(--background-opacity);
 }
+
+.name span {
+  color: var(--tertiary-color);
+  filter: drop-shadow(.05rem .1rem .2rem var(--tertiary-color));
+  animation: 3000ms ease-in-out infinite blink;
+}
+
 
 .logo {
   width: 5rem;
@@ -27,4 +33,34 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }

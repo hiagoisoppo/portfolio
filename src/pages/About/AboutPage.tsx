@@ -19,7 +19,9 @@ export default function AboutPage() {
           className={styles.photo}
         />
         <span className={styles.symbol}></span>
-        <span className={styles.emblem}></span>
+        <span className={styles.emblemWrapper}>
+          <span className={styles.emblem}></span>
+        </span>
       </div>
       <article className={styles.content}>
           <h2>SOBRE MIM</h2>
@@ -112,8 +114,10 @@ export default function AboutPage() {
       </article>
       <a href="#CONTACT" className={styles.linkWrapper}>
         Entre em contato.
-        <div className={styles.bar}></div>
-        <div className={styles.arrow}></div>
+        <div>
+          <div className={styles.bar}></div>
+          <div className={styles.arrow}></div>
+        </div>
       </a>
     </section>
   );

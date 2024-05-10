@@ -3,25 +3,23 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 80vw;
+  width: 75vw;
   position: relative;
+  gap: 3rem;
 }
 
+/* NAVIGATE BUTTON */
 .bar{
   width: 10rem;
   height: .2rem;
   background-color: var(--tertiary-color);
-  animation: 1500ms ease-in-out infinite blink;
 }
-
 .arrow {
   background-color: var(--tertiary-color);
   width: 2rem;
   height: 2rem;
   clip-path: polygon(100% 100%, 0% 100%, 50% 50%);
-  animation: 1500ms ease-in-out infinite blink;
 }
-
 .linkWrapper {
   position: absolute;
   bottom: 1rem;
@@ -33,41 +31,176 @@
   flex-direction: column-reverse;
   font-size: 2rem;
 }
-
-.linkWrapper:hover div{
-  background-color: var(--secondary-color);
+.linkWrapper div:first-of-type {
+  filter: drop-shadow(0 0 1rem var(--tertiary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  animation: 3000ms ease-in-out infinite blink;
 }
-
 .linkWrapper:hover {
   color: var(--tertiary-color);
 }
 
+/* GENERAL CONTAINER */
+.container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  height: 75%;
+  width: 100%;
+}
+
+/* LINK CONTAINER */
+.link {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-image: linear-gradient(to right, var(--secondary-color), transparent);
+  background-size: 500% 100%;
+  background-position-x: right;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  justify-content: center;
+  padding: 0 3rem;
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+.container:first-child .link {
+  background-image: linear-gradient(to left, var(--secondary-color), transparent);
+  background-position-x: left;
+  text-align: end;
+  align-items: end;
+}
+.link:hover{
+  background-size: 150% 100%;
+  color: var(--primary-color);
+}
+
+/* CONTAINER BARS */
+.container:first-child .link .linkBar {
+  background-color: var(--tertiary-color);
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  right: -2rem;
+  top: 0;
+  animation: 3000ms ease-in-out infinite blink;
+  box-shadow: 0 0 2.5rem .4rem var(--tertiary-color-op);
+}
+.container:nth-child(2) .link:hover::before {
+  content: '';
+  background-color: var(--tertiary-color);
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  box-shadow: 0 0 2.5rem .4rem var(--tertiary-color-op);
+}
+.container:first-child .link:hover::before {
+  content: '';
+  background-color: var(--tertiary-color);
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  right: -2rem;
+  top: 0;
+  box-shadow: 0 0 2.5rem .4rem var(--tertiary-color-op);
+}
+
+/* ICONE */
+.linkIcon {
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25%;
+  height: 70%;
+  opacity: .4;
+  filter: drop-shadow(0 0 .75rem var(--tertiary-color));
+}
+.container:first-child .link .linkIcon{
+  right: auto;
+  left: 5rem;
+}
+.container .link:hover .linkIcon {
+  opacity: 1;
+}
+
+/* TITLE */
+.container .link h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: .5;
+}
+.container .link:hover h3 {
+  opacity: .75;
+}
+
+/* TEXT */
+.container .link p {
+  font-size: 1.5rem;
+  width: 60%;
+  margin-bottom: 1rem;
+  opacity: .5;
+}
+.container .link:hover p {
+  opacity: .75;
+}
+
+/* TEXT */
+.container .link span {
+  position: relative;
+  z-index: 10;
+  font-size: 1.25rem;
+  opacity: .5;
+  cursor: text
+}
+.container .link:hover span {
+  opacity: 1;
+  color: var(--tertiary-color);
+}
+
+/* LINK ANCHOR */
+.container .link a {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ANIMATIONS */
 @keyframes blink {
   0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   10% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   20% {
-    opacity: 0;
+    opacity: 0.4;
   }
   30% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   35% {
-    opacity: 0;
+    opacity: 0.4;
   }
   40% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   45% {
-    opacity: 0;
+    opacity: 0.4;
   }
   90% {
-    opacity: var(--background-opacity);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.4;
   }
 }

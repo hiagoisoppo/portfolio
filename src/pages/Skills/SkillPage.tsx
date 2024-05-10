@@ -317,8 +317,10 @@ export default function SkillsPage() {
 
       <a href="#PROJECTS" className={styles.linkWrapper}>
         Conheça meus projetos.
-        <div className={styles.bar}></div>
-        <div className={styles.arrow}></div>
+        <div>
+          <div className={styles.bar}></div>
+          <div className={styles.arrow}></div>
+        </div>
       </a>
     </section>
   );

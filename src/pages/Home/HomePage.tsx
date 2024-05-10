@@ -7,10 +7,10 @@ export default function HomePage() {
   return (
     <section id="HOME" className={styles.home}>
       <div className={styles.title}>
-        <h1>
-          Todo problema possui uma solução, só depende de quanto tempo e café você
-          tem a me oferecer!
-        </h1>
+        <p>
+          Todo <span>problema</span> possui uma <span>solução</span>, só depende de quanto <span>tempo</span> e <span>café</span> você
+          tem a me oferecer<span>.</span>
+        </p>
         <div className={styles.logoWrapper}>
           <Logo />
         </div>
@@ -21,15 +21,20 @@ export default function HomePage() {
           src={photo}
           alt="Foto de perfil"
           className={styles.photo}
+          width={400}
         />
         <span className={styles.symbol}></span>
-        <span className={styles.emblem}></span>
+        <span className={styles.emblemWrapper}>
+          <span className={styles.emblem}></span>
+        </span>
       </div>
 
       <a href="#SKILLS" className={styles.linkWrapper}>
         Explore meu portifólio
-        <div className={styles.bar}></div>
-        <div className={styles.arrow}></div>
+        <div>
+          <div className={styles.bar}></div>
+          <div className={styles.arrow}></div>
+        </div>
       </a>
     </section>
   );

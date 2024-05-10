@@ -9,7 +9,7 @@ export default function Header(){
         <div className={style.logo}>
           <Logo />
         </div>
-        <h1 className={style.h1}>Hiago Isoppo</h1>
+        <span className={style.name}><span>Hiago</span> Isoppo</span>
       </div>
       <NavMenu />
     </header>
