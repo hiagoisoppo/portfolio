@@ -1,7 +1,7 @@
 import Logo from "@/components/Logo/Logo";
 import styles from "./homepage.module.css";
 import Image from "next/image";
-import photo from '@/assets/photoTest.png';
+import photo from '@/assets/photoTest2.png';
 
 export default function HomePage() {
   return (
@@ -21,7 +21,6 @@ export default function HomePage() {
           src={photo}
           alt="Foto de perfil"
           className={styles.photo}
-          width={400}
         />
         <span className={styles.symbol}></span>
         <span className={styles.emblemWrapper}>
@@ -30,7 +29,7 @@ export default function HomePage() {
       </div>
 
       <a href="#SKILLS" className={styles.linkWrapper}>
-        Explore meu portifólio
+        Explore meu portfólio
         <div>
           <div className={styles.bar}></div>
           <div className={styles.arrow}></div>

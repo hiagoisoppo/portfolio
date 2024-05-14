@@ -5,8 +5,8 @@ import Background from "@/components/Background/Background";
 import Header from "@/components/Header/Header";
 
 export const metadata: Metadata = {
-  title: "HIT | Portfolio",
-  description: "Personal page of Hiago Isoppo Trajano",
+  title: "Hiago Isoppo | Portfólio",
+  description: "Página pessoal de Hiago Isoppo Trajano",
 };
 
 export default function RootLayout({

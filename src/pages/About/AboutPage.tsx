@@ -1,45 +1,42 @@
 import styles from "./aboutpage.module.css";
-import Image from 'next/image';
-import photo from '@/assets/photoTest.png';
-import flagBRA from '@/assets/FlagBRA.png';
-import flagUSA from '@/assets/FlagUSA.png';
-import iconFamily from '@/assets/iconFamily.png';
-import iconGame from '@/assets/iconGaming.png';
-import iconRpg from '@/assets/iconRpg.png';
-import iconCode from '@/assets/iconCoding.png';
-import iconMovie from '@/assets/iconMovie.png';
+import Image from "next/image";
+import photo from "@/assets/photoTest.png";
+import flagBRA from "@/assets/FlagBRA.png";
+import flagUSA from "@/assets/FlagUSA.png";
+import iconFamily from "@/assets/iconFamily.png";
+import iconGame from "@/assets/iconGaming.png";
+import iconRpg from "@/assets/iconRpg.png";
+import iconCode from "@/assets/iconCoding.png";
+import iconMovie from "@/assets/iconMovie.png";
 
 export default function AboutPage() {
   return (
     <section id="ABOUT" className={styles.about}>
       <div className={styles.image}>
-        <Image 
-          src={photo}
-          alt="Foto de perfil"
-          className={styles.photo}
-        />
+        <Image src={photo} alt="Foto de perfil" className={styles.photo} />
         <span className={styles.symbol}></span>
         <span className={styles.emblemWrapper}>
           <span className={styles.emblem}></span>
         </span>
       </div>
       <article className={styles.content}>
-          <h2>SOBRE MIM</h2>
+        <h2>SOBRE MIM</h2>
         <div className={styles.aboutWrapper}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-            ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
-            massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
-            nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit
-            amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat
-            in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero
-            pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo
-            in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue
-            blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede
-            pellentesque fermentum. Maecenas adipiscing ante non diam sodales
-            hendrerit.
+            Olá, me chamo Hiago, possuo 26 anos, resido em Sombrio-SC com minha
+            esposa e filho. Atualmente sou Desenvolvedor Web, mas a vida já me
+            proporcionou vivência o suficiente para aceitar qualquer desafio
+            confiando cegamente em minhas capacidades de adaptação e evolução.
+            Minha história com a tecnologia começa cedo, aos 8 anos me tornando
+            aficionado por hardware, mas logo essa história é manchada pelo
+            pigmento da arte, mais especificamente o design, foram alguns anos
+            até identificar que minha paixão estava no processo de criação, na
+            busca pela solução e não na arte em si, e que essa paixão poderia
+            ser aplicada em algo que eu amava ainda mais, a tecnologia. Desde
+            então venho aprofundando meus conhecimentos como desenvolvedor,
+            sempre buscando me atualizar com as novidades do mercado, mas nunca
+            esquecendo de solidificar minhas bases, podendo assim ser uma peça
+            chave em qualquer equipe que for aplicado.
           </p>
         </div>
         <div className={styles.languagesWrapper}>
@@ -47,7 +44,7 @@ export default function AboutPage() {
             <h3>IDIOMAS</h3>
             <ul>
               <li>
-                <Image 
+                <Image
                   src={flagBRA}
                   alt="Bandeira do Brasil"
                   className={styles.flags}
@@ -56,7 +53,7 @@ export default function AboutPage() {
                 Português
               </li>
               <li>
-                <Image 
+                <Image
                   src={flagUSA}
                   alt="Bandeira dos Estados Unidos"
                   className={styles.flags}
@@ -69,7 +66,7 @@ export default function AboutPage() {
             <h3>HOBBIES</h3>
             <ul>
               <li>
-                <Image 
+                <Image
                   src={iconFamily}
                   alt="Icone Representando a Familia"
                   className={styles.flags}
@@ -77,7 +74,7 @@ export default function AboutPage() {
                 Familia
               </li>
               <li>
-                <Image 
+                <Image
                   src={iconGame}
                   alt="Icone de Video Game"
                   className={styles.flags}
@@ -85,7 +82,7 @@ export default function AboutPage() {
                 Jogos
               </li>
               <li>
-                <Image 
+                <Image
                   src={iconRpg}
                   alt="Icone de dado D20"
                   className={styles.flags}
@@ -93,7 +90,7 @@ export default function AboutPage() {
                 Rpg
               </li>
               <li>
-                <Image 
+                <Image
                   src={iconCode}
                   alt="Icone de uma matriz de código"
                   className={styles.flags}
@@ -101,7 +98,7 @@ export default function AboutPage() {
                 Codar
               </li>
               <li>
-                <Image 
+                <Image
                   src={iconMovie}
                   alt="Icone de tela de cinema e balde de pipoca"
                   className={styles.flags}

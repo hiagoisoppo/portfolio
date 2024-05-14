@@ -13,8 +13,10 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 50rem;
-  width: 40rem;
+  height: calc(537px / 2 * 1.8);
+  width: calc(364px /2 * 1.8);
+  animation: 3000ms ease-in-out infinite float;
+  flex-shrink: 0;
 }
 
 .photo {
@@ -56,7 +58,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: auto;
   gap: 2rem;
 }
 
@@ -297,4 +299,16 @@
   flex-direction: column;
   gap: .5rem;
   animation: 3000ms ease-in-out infinite blink;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
