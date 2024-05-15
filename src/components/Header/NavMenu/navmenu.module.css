@@ -1,3 +1,7 @@
+.navmenu {
+  display: none;
+}
+
 .navmenu ul{
   display: flex;
   flex-direction: column;

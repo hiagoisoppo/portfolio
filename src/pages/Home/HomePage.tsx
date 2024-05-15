@@ -11,9 +11,6 @@ export default function HomePage() {
           Todo <span>problema</span> possui uma <span>solução</span>, só depende de quanto <span>tempo</span> e <span>café</span> você
           tem a me oferecer<span>.</span>
         </p>
-        <div className={styles.logoWrapper}>
-          <Logo />
-        </div>
       </div>
 
       <div className={styles.image}>
@@ -26,6 +23,9 @@ export default function HomePage() {
         <span className={styles.emblemWrapper}>
           <span className={styles.emblem}></span>
         </span>
+        <div className={styles.logoWrapper}>
+          <Logo />
+        </div>
       </div>
 
       <a href="#SKILLS" className={styles.linkWrapper}>
