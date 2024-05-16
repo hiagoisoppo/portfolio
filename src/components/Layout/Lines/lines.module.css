@@ -1,91 +1,95 @@
+/* LINES CONTAINER */
+.container {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  filter: drop-shadow(0 0 1rem var(--tertiary-color));
+}
+/* TOP LINES */
 .topLeft {
   position: fixed;
-  z-index: -10;
+  z-index: 501;
   top: 0;
   left: 1rem;
   width: .2rem;
   height: 1rem;
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   animation: 10s ease-in-out infinite moveRightX;
 }
-
-.leftTop {
-  position: fixed;
-  z-index: -10;
-  top: 1rem;
-  left: 0;
-  width: 1rem;
-  height: .2rem;
-  background: var(--secondary-color);
-  animation: 10s ease-in-out infinite moveDownY;
-}
-
-.botLeft {
-  position: fixed;
-  z-index: -10;
-  bottom: 0;
-  left: 1rem;
-  width: .2rem;
-  height: 1rem;
-  background: var(--secondary-color);
-  animation: 10s ease-in-out infinite moveRightX;
-}
-
-.leftBot {
-  position: fixed;
-  z-index: -10;
-  bottom: 1rem;
-  left: 0;
-  width: 1rem;
-  height: .2rem;
-  background: var(--secondary-color);
-  animation: 10s ease-in-out infinite moveUpY;
-}
-
-.botRight {
-  position: fixed;
-  z-index: -10;
-  bottom: 0;
-  right: 1rem;
-  width: .2rem;
-  height: 1rem;
-  background: var(--secondary-color);
-  animation: 10s ease-in-out infinite moveLeftX;
-}
-
-.rightBot {
-  position: fixed;
-  z-index: -10;
-  bottom: 1rem;
-  right: 0;
-  width: 1rem;
-  height: .2rem;
-  background: var(--secondary-color);
-  animation: 10s ease-in-out infinite moveUpY;
-}
-
 .topRight {
   position: fixed;
-  z-index: -10;
+  z-index: 501;
   top: 0;
   right: 1rem;
   width: .2rem;
   height: 1rem;
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   animation: 10s ease-in-out infinite moveLeftX;
 }
-
+/* LEFT LINES */
+.leftTop {
+  position: fixed;
+  z-index: 501;
+  top: 1rem;
+  left: 0;
+  width: 1rem;
+  height: .2rem;
+  background: var(--tertiary-color);
+  animation: 10s ease-in-out infinite moveDownY;
+}
+.leftBot {
+  position: fixed;
+  z-index: 501;
+  bottom: 1rem;
+  left: 0;
+  width: 1rem;
+  height: .2rem;
+  background: var(--tertiary-color);
+  animation: 10s ease-in-out infinite moveUpY;
+}
+/* BOTTOM LINES */
+.botLeft {
+  position: fixed;
+  z-index: 501;
+  bottom: 0;
+  left: 1rem;
+  width: .2rem;
+  height: 1rem;
+  background: var(--tertiary-color);
+  animation: 10s ease-in-out infinite moveRightX;
+}
+.botRight {
+  position: fixed;
+  z-index: 501;
+  bottom: 0;
+  right: 1rem;
+  width: .2rem;
+  height: 1rem;
+  background: var(--tertiary-color);
+  animation: 10s ease-in-out infinite moveLeftX;
+}
+/* RIGHT LINES */
+.rightBot {
+  position: fixed;
+  z-index: 501;
+  bottom: 1rem;
+  right: 0;
+  width: 1rem;
+  height: .2rem;
+  background: var(--tertiary-color);
+  animation: 10s ease-in-out infinite moveUpY;
+}
 .rightTop {
   position: fixed;
-  z-index: -10;
+  z-index: 501;
   top: 1rem;
   right: 0;
   width: 1rem;
   height: .2rem;
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   animation: 10s ease-in-out infinite moveDownY;
 }
-
+/* ANIMATIONS */
 @keyframes moveDownY{
   0% {
     transform: translateY(0);
@@ -100,7 +104,6 @@
     opacity: var(--background-opacity);
   }
 }
-
 @keyframes moveUpY{
   0% {
     transform: translateY(0);
@@ -115,7 +118,6 @@
     opacity: var(--background-opacity);
   }
 }
-
 @keyframes moveRightX{
   0% {
     transform: translateX(0);
@@ -130,7 +132,6 @@
     opacity: var(--background-opacity);
   }
 }
-
 @keyframes moveLeftX{
   0% {
     transform: translateX(0);

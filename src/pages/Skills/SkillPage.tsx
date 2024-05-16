@@ -277,13 +277,13 @@ export default function SkillsPage() {
         </div>
       </article>
 
-      <a href="#PROJECTS" className={styles.linkWrapper}>
+      {/* <a href="#PROJECTS" className={styles.linkWrapper}>
         Conheça meus projetos
         <div>
           <div className={styles.bar}></div>
           <div className={styles.arrow}></div>
         </div>
-      </a>
+      </a> */}
     </section>
   );
 }

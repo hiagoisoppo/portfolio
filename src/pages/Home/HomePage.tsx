@@ -28,13 +28,13 @@ export default function HomePage() {
         </div>
       </div>
 
-      <a href="#SKILLS" className={styles.linkWrapper}>
+      {/* <a href="#SKILLS" className={styles.linkWrapper}>
         Explore meu portfólio
         <div>
           <div className={styles.bar}></div>
           <div className={styles.arrow}></div>
         </div>
-      </a>
+      </a> */}
     </section>
   );
 }

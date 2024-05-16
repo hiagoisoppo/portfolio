@@ -4,7 +4,7 @@
 
 .navmenu ul{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   align-items: end;
   justify-content: center;
@@ -79,7 +79,7 @@
 }
 /* MARCADOR DE CLICK OU DE POSICIONAMENTO DA TELA */
 .mark {
-  height: 4rem;
+  height: 2em;
   color: var(--primary-color);
   font-size: 2rem;
   width: 17rem;
@@ -150,5 +150,12 @@
 
   100% {
     background-position: 100% 50%;
+  }
+}
+
+/* MEDIA QUERYS */
+@media screen and (min-width: 760px) {
+  .navmenu {
+    display: flex;
   }
 }

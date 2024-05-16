@@ -102,13 +102,13 @@ export default function ContactPage() {
           <a href="/CV-HiagoIsoppo.pdf" download></a>
         </article>
       </div>
-      <a href="#HOME" className={styles.linkWrapper}>
+      {/* <a href="#HOME" className={styles.linkWrapper}>
         Volte ao topo!
         <div>
           <div className={styles.arrow}></div>
           <div className={styles.bar}></div>
         </div>
-      </a>
+      </a> */}
     </section>
   );
 }

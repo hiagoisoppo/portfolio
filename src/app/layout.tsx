@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import Background from "@/components/Background/Background";
-import Header from "@/components/Header/Header";
+import Layout from "@/components/Layout/Layout";
 
 export const metadata: Metadata = {
   title: "Hiago Isoppo | Portfólio",
@@ -17,9 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Background />
+        <Layout />
         <LanguageProvider>
-          <Header />
           {children}
         </LanguageProvider>
       </body>

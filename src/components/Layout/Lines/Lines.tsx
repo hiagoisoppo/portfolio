@@ -2,7 +2,7 @@ import style from "./lines.module.css";
 
 export default function Lines() {
   return (
-    <>
+    <div className={style.container}>
       <div className={style.topRight}></div>
       <div className={style.topLeft}></div>
       <div className={style.leftTop}></div>
@@ -11,6 +11,6 @@ export default function Lines() {
       <div className={style.botRight}></div>
       <div className={style.rightBot}></div>
       <div className={style.rightTop}></div>
-    </>
+    </div>
   );
 }

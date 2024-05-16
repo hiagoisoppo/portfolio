@@ -8,16 +8,24 @@ import iconGame from "@/assets/iconGaming.png";
 import iconRpg from "@/assets/iconRpg.png";
 import iconCode from "@/assets/iconCoding.png";
 import iconMovie from "@/assets/iconMovie.png";
+import Logo from "@/components/Logo/Logo";
 
 export default function AboutPage() {
   return (
     <section id="ABOUT" className={styles.about}>
       <div className={styles.image}>
-        <Image src={photo} alt="Foto de perfil" className={styles.photo} />
+        <Image 
+          src={photo}
+          alt="Foto de perfil"
+          className={styles.photo}
+        />
         <span className={styles.symbol}></span>
         <span className={styles.emblemWrapper}>
           <span className={styles.emblem}></span>
         </span>
+        <div className={styles.logoWrapper}>
+          <Logo />
+        </div>
       </div>
       <article className={styles.content}>
         <h2>SOBRE MIM</h2>
@@ -109,13 +117,13 @@ export default function AboutPage() {
           </div>
         </div>
       </article>
-      <a href="#CONTACT" className={styles.linkWrapper}>
+      {/* <a href="#CONTACT" className={styles.linkWrapper}>
         Entre em contato.
         <div>
           <div className={styles.bar}></div>
           <div className={styles.arrow}></div>
         </div>
-      </a>
+      </a> */}
     </section>
   );
 }

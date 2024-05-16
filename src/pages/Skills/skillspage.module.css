@@ -2,49 +2,48 @@
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 75vw;
+  justify-content: start;
+  height: fit-content;
+  width: 100vw;
   gap: 5rem;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 8rem 0;
 }
+
+/*  */
 .content {
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
-  height: 70%;
-  width: 45%;
-  padding: 0;
+  height: fit-content;
+  width: 90%;
   gap: 2rem;
 }
-
 .content h2 {
   display: flex;
   margin: 0;
   align-items: center;
-  padding-left: 1rem;
-  height: 5rem;
+  padding-left: 1em;
+  height: 2em;
   color: var(--primary-color);
-  font-size: 3rem;
-  width: calc(100% - 1rem);
-  opacity: 1;
+  font-size: 4rem;
+  width: 100%;
   background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 200% 100%;
+  background-size: 120% 100%;
   animation: 8s ease infinite gradient;
 }
 
+/* ABOUT CONTENT */
 .aboutWrapper {
   display: flex;
   position: relative;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  font-size: 1.4rem;
   padding-left: 2.5rem;
-  gap: 2rem;
+  gap: 3rem;
 }
-
 .aboutWrapper::after {
   content: '';
   display: block;
@@ -56,7 +55,6 @@
   margin-top: 1rem;
   animation: 3000ms ease-in-out infinite blink;
 }
-
 .aboutWrapper::before {
   content: '';
   display: block;
@@ -69,31 +67,27 @@
   animation: 3000ms ease-in-out infinite blink;
   box-shadow: 0 0 .5rem .3rem var(--tertiary-color-op);
 }
-
 .aboutWrapper p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
-
 .aboutWrapper ul {
   display: flex;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
-
 .aboutWrapper li {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.3rem;
-  width: 6rem;
+  font-size: 2.5rem;
+  width: 9rem;
 }
-
 .flags {
-  height: 6rem;
-  width: 6rem;
+  height: 8rem;
+  width: 8rem;
   margin-bottom: .5rem;
   border-radius: .5rem;
   filter: grayscale(100%);
@@ -101,16 +95,57 @@
   background-size: 100% 250%;
   padding: .5rem;
 }
-
 .aboutWrapper li:hover {
   color: var(--tertiary-color);
 }
-
 .aboutWrapper li:hover img {
   filter: grayscale(0%);
   background-image: linear-gradient(to bottom, var(--secondary-color), transparent);
 }
 
+
+
+/* LINK FOOTER */
+.bar {
+  width: 100%;
+  height: .2rem;
+  background-color: var(--tertiary-color);
+  animation: 3000ms ease-in-out infinite blink;
+}
+.arrow {
+  background-color: var(--tertiary-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+  animation: 3000ms ease-in-out infinite blink;
+}
+.linkWrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: .5rem;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.linkWrapper div:first-of-type {
+  filter: drop-shadow(0 0 1rem var(--tertiary-color));
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  width: 90%;
+  gap: .5rem;
+  animation: 3000ms ease-in-out infinite blink;
+}
+.linkWrapper:hover {
+  color: var(--tertiary-color);
+}
+
+/* ANIMATIONS */
 @keyframes gradient {
   0% {
     background-position: 100% 50%;
@@ -124,7 +159,6 @@
     background-position: 100% 50%;
   }
 }
-
 @keyframes blink {
   0% {
     opacity: 0.4;
@@ -155,41 +189,18 @@
   }
 }
 
-.bar{
-  width: 10rem;
-  height: .2rem;
-  background-color: var(--tertiary-color);
+/* MEDIA QUERYS */
+/* @media screen and (min-width: 360px) {
 }
-
-.arrow {
-  background-color: var(--tertiary-color);
-  width: 2rem;
-  height: 2rem;
-  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+@media screen and (min-width: 760px) {
 }
-
-.linkWrapper {
-  position: absolute;
-  bottom: 2rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  flex-direction: column;
-  font-size: 2rem;
-}
-
-.linkWrapper:hover {
-  color: var(--tertiary-color);
-}
-
-.linkWrapper div:first-of-type {
-  filter: drop-shadow(0 0 1rem var(--tertiary-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: .5rem;
-  animation: 3000ms ease-in-out infinite blink;
-}
+@media screen and (min-width: 1020px) {
+  .linkWrapper {
+    right: 50%;
+    transform: translateX(50%);
+    align-items: center;
+  }
+  .linkWrapper div:first-of-type {
+    align-items: center;
+  }
+} */

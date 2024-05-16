@@ -1,4 +1,4 @@
-import Logo from '../Logo/Logo';
+import Logo from '../../Logo/Logo';
 import NavMenu from './NavMenu/NavMenu';
 import style from './header.module.css';
 
@@ -9,9 +9,11 @@ export default function Header(){
         <div className={style.logo}>
           <Logo />
         </div>
-        <span className={style.name}><span>Hiago</span> Isoppo</span>
+        <span className={style.name}>
+          <span>Hiago</span> Isoppo
+        </span>
       </div>
-      <NavMenu />
+      {/* <NavMenu /> */}
     </header>
   )
 }

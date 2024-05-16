@@ -21,10 +21,13 @@ export default function Slider() {
               height={1080}
               className={style.image}
             />
+
             <h3>
               {project.title}
             </h3>
+
             <p>{project.description}</p>
+
             <ul className={style.buttonWrapper}>
               {project.deploy ? (<li>
                 <a href={project.deploy} target="_blank">
@@ -39,6 +42,7 @@ export default function Slider() {
                 </a>
               </li>) : null}
             </ul>
+
             <span className={style.symbol}></span>
             <span className={style.emblem}></span>
           </article>

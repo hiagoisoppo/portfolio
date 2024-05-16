@@ -1,26 +1,25 @@
 .projects {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 75vw;
-  position: relative;
+  height: fit-content;
+  width: 100vw;
   flex-direction: column;
+  padding: 7rem 0 0 0;
 }
 
-.bar{
+/* .bar{
   width: 10rem;
   height: .2rem;
   background-color: var(--tertiary-color);
 }
-
 .arrow {
   background-color: var(--tertiary-color);
   width: 2rem;
   height: 2rem;
   clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
 }
-
 .linkWrapper {
   position: absolute;
   bottom: 1rem;
@@ -32,11 +31,9 @@
   flex-direction: column;
   font-size: 2rem;
 }
-
 .linkWrapper:hover {
   color: var(--tertiary-color);
 }
-
 .linkWrapper div:first-of-type {
   filter: drop-shadow(0 .3rem .4rem var(--tertiary-color));
   display: flex;
@@ -45,7 +42,7 @@
   flex-direction: column;
   gap: .5rem;
   animation: 3000ms ease-in-out infinite blink;
-}
+} */
 
 @keyframes blink {
   0% {
@@ -74,5 +71,11 @@
   }
   100% {
     opacity: 0.4;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects{
+    height: 100vh;
   }
 }
