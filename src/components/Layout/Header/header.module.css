@@ -1,7 +1,6 @@
 /* HEADER CONTAINER */
 .header {
   position: fixed;
-  -webkit-backface-visibility: hidden;
   top: 0;
   width: 100%;
   height: fit-content;

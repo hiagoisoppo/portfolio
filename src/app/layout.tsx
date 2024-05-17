@@ -6,6 +6,7 @@ import Layout from "@/components/Layout/Layout";
 export const metadata: Metadata = {
   title: "Hiago Isoppo | Portfólio",
   description: "Página pessoal de Hiago Isoppo Trajano",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
