@@ -1,11 +1,11 @@
 .container {
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: end;
   gap: .3rem;
   z-index: 500;
   padding: 1rem;

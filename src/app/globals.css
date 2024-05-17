@@ -32,8 +32,6 @@ html {
 }
 
 body {
-  justify-content: center;
-  align-items: center;
   color: var(--secondary-color);
 }
 

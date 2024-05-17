@@ -2,6 +2,8 @@
 .container {
   position: fixed;
   top: 0;
+  height: 100vh;
+  width: 100vw;
   z-index: 500;
   filter: drop-shadow(0 0 1rem var(--tertiary-color));
 }

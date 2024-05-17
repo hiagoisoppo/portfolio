@@ -14,13 +14,13 @@ export default function Console() {
     return () => clearInterval(timing);
   }, [consoleInput])
   return (
-    <footer className={style.container}>
+    <div className={style.container}>
       <div className={style.sidebar}></div>
       <div className={style.console}>
         <span>{consoleInput[2]}</span>
         <span>{consoleInput[1]}</span>
         <span>{consoleInput[0]}</span>
       </div>
-    </footer>
+    </div>
   );
 }
