@@ -6,76 +6,11 @@
   height: fit-content;
   width: 100%;
   flex-direction: column;
-  padding: 7rem 0 0 0;
 }
-
-/* .bar{
-  width: 10rem;
-  height: .2rem;
-  background-color: var(--tertiary-color);
+/* MEDIA QUERYS */
+@media screen and (min-width: 360px) {
 }
-.arrow {
-  background-color: var(--tertiary-color);
-  width: 2rem;
-  height: 2rem;
-  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+@media screen and (min-width: 760px) {
 }
-.linkWrapper {
-  position: absolute;
-  bottom: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  flex-direction: column;
-  font-size: 2rem;
-}
-.linkWrapper:hover {
-  color: var(--tertiary-color);
-}
-.linkWrapper div:first-of-type {
-  filter: drop-shadow(0 .3rem .4rem var(--tertiary-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: .5rem;
-  animation: 3000ms ease-in-out infinite blink;
-} */
-
-@keyframes blink {
-  0% {
-    opacity: 0.4;
-  }
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 0.4;
-  }
-  30% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 0.4;
-  }
-  40% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0.4;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .projects{
-    height: 100vh;
-  }
+@media screen and (min-width: 1020px) {
 }

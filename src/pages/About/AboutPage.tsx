@@ -15,8 +15,10 @@ export default function AboutPage() {
     <section id="ABOUT" className={styles.about}>
       <div className={styles.image}>
         <Image 
-          src={photo}
+          src="/assets/aboutPic.png"
           alt="Foto de perfil"
+          width={2232}
+          height={3007}
           className={styles.photo}
         />
         <span className={styles.symbol}></span>
@@ -117,13 +119,6 @@ export default function AboutPage() {
           </div>
         </div>
       </article>
-      {/* <a href="#CONTACT" className={styles.linkWrapper}>
-        Entre em contato.
-        <div>
-          <div className={styles.bar}></div>
-          <div className={styles.arrow}></div>
-        </div>
-      </a> */}
     </section>
   );
 }

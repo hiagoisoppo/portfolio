@@ -5,10 +5,9 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   gap: 5rem;
 }
-
 /* TEXT */
 .title {
   display: flex;
@@ -18,55 +17,13 @@
   width: 80%;
   height: fit-content;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
-.title p span {
+.title span {
   color: var(--tertiary-color);
   filter: drop-shadow(.1rem .5rem .4rem var(--tertiary-color));
   animation: 3000ms ease-in-out infinite blink;
 }
-
-/* LINK FOOTER */
-.bar{
-  width: 100%;
-  height: .2rem;
-  background-color: var(--tertiary-color);
-  animation: 3000ms ease-in-out infinite blink;
-}
-.arrow {
-  background-color: var(--tertiary-color);
-  width: 1.5rem;
-  height: 1.5rem;
-  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-  animation: 3000ms ease-in-out infinite blink;
-}
-.linkWrapper {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: .5rem;
-  flex-direction: column;
-  font-size: 1.5rem;
-}
-.linkWrapper div:first-of-type {
-  filter: drop-shadow(0 0 1rem var(--tertiary-color));
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-direction: column;
-  width: 90%;
-  gap: .5rem;
-  animation: 3000ms ease-in-out infinite blink;
-}
-.linkWrapper:hover {
-  color: var(--tertiary-color);
-}
-
-
 /* PHOTO */
 .image {
   display: flex;
@@ -75,7 +32,7 @@
   justify-content: center;
   height: 45vh;
   animation: 10000ms ease-in-out infinite float;
-  aspect-ratio: 1/1.4;
+  aspect-ratio: 3/4;
 }
 .photo {
   position: absolute;
@@ -115,8 +72,6 @@
   animation: roll 10000ms ease-in-out infinite;
   aspect-ratio: 1/1;
 }
-
-
 /* KEYFRAMES */
 @keyframes blink {
   0% {
@@ -169,34 +124,10 @@
     transform: rotate(0deg);
   }
 }
-
 /* MEDIA QUERYS */
 @media screen and (min-width: 360px) {
 }
 @media screen and (min-width: 760px) {
 }
 @media screen and (min-width: 1020px) {
-  .home {
-    gap: 10rem;
-    flex-direction: row;
-    width: 70vw;
-  }
-  .image {
-    height: 50vh;
-  }
-  .linkWrapper {
-    right: 50%;
-    transform: translateX(50%);
-    align-items: center;
-  }
-  .logoWrapper {
-    height: 75vh;
-  }
-  .title {
-    width: 60%;
-    font-size: 4.2rem;
-  }
-  .linkWrapper div:first-of-type {
-    align-items: center;
-  }
 }

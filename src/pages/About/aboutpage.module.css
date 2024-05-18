@@ -18,7 +18,7 @@
   justify-content: center;
   height: 45vh;
   animation: 10000ms ease-in-out infinite float;
-  aspect-ratio: 1/1.4;
+  aspect-ratio: 3/4;
 }
 .photo{
   position: absolute;

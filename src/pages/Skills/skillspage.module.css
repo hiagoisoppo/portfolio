@@ -5,35 +5,31 @@
   justify-content: start;
   height: fit-content;
   width: 100%;
-  gap: 5rem;
   flex-direction: column;
-  padding: 8rem 0;
 }
-
-/*  */
+/* BLOCO DE CONTEUDO */
 .content {
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
-  height: fit-content;
+  height: 100vh;
   width: 90%;
-  gap: 2rem;
+  gap: 1rem;
 }
 .content h2 {
+  text-transform: uppercase;
   display: flex;
-  margin: 0;
   align-items: center;
-  padding-left: 1em;
+  padding-left: .5em;
   height: 2em;
   color: var(--primary-color);
-  font-size: 4rem;
+  font-size: 3rem;
   width: 100%;
-  background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 120% 100%;
+  background-image: linear-gradient(to right, var(--secondary-color), transparent 85%);
+  background-size: 200% 100%;
   animation: 8s ease infinite gradient;
 }
-
 /* ABOUT CONTENT */
 .aboutWrapper {
   display: flex;
@@ -42,7 +38,7 @@
   justify-content: center;
   flex-direction: column;
   padding-left: 2.5rem;
-  gap: 3rem;
+  gap: 2rem;
 }
 .aboutWrapper::after {
   content: '';
@@ -69,12 +65,14 @@
 }
 .aboutWrapper p {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+/* TECH ICONS */
 .aboutWrapper ul {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  row-gap: 1rem;
+  column-gap: .5rem;
   flex-wrap: wrap;
 }
 .aboutWrapper li {
@@ -82,81 +80,45 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 2.5rem;
-  width: 9rem;
+  font-size: 1.3rem;
+  width: 6rem;
 }
 .flags {
-  height: 8rem;
-  width: 8rem;
+  height: 5rem;
+  width: 5rem;
   margin-bottom: .5rem;
   border-radius: .5rem;
-  filter: grayscale(100%);
   background-image: linear-gradient(to top, var(--secondary-color), transparent);
-  background-size: 100% 250%;
+  background-size: 100% 300%;
   padding: .5rem;
-}
-.aboutWrapper li:hover {
-  color: var(--tertiary-color);
-}
-.aboutWrapper li:hover img {
-  filter: grayscale(0%);
-  background-image: linear-gradient(to bottom, var(--secondary-color), transparent);
-}
-
-
-
-/* LINK FOOTER */
-.bar {
-  width: 100%;
-  height: .2rem;
-  background-color: var(--tertiary-color);
-  animation: 3000ms ease-in-out infinite blink;
-}
-.arrow {
-  background-color: var(--tertiary-color);
-  width: 1.5rem;
-  height: 1.5rem;
-  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-  animation: 3000ms ease-in-out infinite blink;
-}
-.linkWrapper {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: .5rem;
-  flex-direction: column;
-  font-size: 1.5rem;
-}
-.linkWrapper div:first-of-type {
-  filter: drop-shadow(0 0 1rem var(--tertiary-color));
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-direction: column;
-  width: 90%;
-  gap: .5rem;
-  animation: 3000ms ease-in-out infinite blink;
-}
-.linkWrapper:hover {
-  color: var(--tertiary-color);
+  animation: 6s ease infinite gradient2;
 }
 
 /* ANIMATIONS */
 @keyframes gradient {
   0% {
-    background-position: 100% 50%;
+    background-position: 70% 50%;
   }
 
   50% {
-    background-position: 90% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-    background-position: 100% 50%;
+    background-position: 70% 50%;
+  }
+}
+@keyframes gradient2 {
+  0% {
+    background-position: 100% 10%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 100% 10%;
   }
 }
 @keyframes blink {
@@ -188,19 +150,17 @@
     opacity: 0.4;
   }
 }
-
 /* MEDIA QUERYS */
-/* @media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) {
 }
 @media screen and (min-width: 760px) {
 }
 @media screen and (min-width: 1020px) {
-  .linkWrapper {
-    right: 50%;
-    transform: translateX(50%);
-    align-items: center;
+  .aboutWrapper li:hover {
+    color: var(--tertiary-color);
   }
-  .linkWrapper div:first-of-type {
-    align-items: center;
+  .aboutWrapper li:hover img {
+    filter: grayscale(0%);
+    background-image: linear-gradient(to bottom, var(--secondary-color), transparent);
   }
-} */
+}

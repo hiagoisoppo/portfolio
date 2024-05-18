@@ -1,20 +1,16 @@
 import Image from "next/image";
 import styles from "./contactpage.module.css";
-import iconGithub from "@/assets/icons/rounded-githubalt.svg";
-import iconCurriculum from "@/assets/icons/rounded-appstorealt.svg";
-import iconEmail from "@/assets/icons/rounded-email.svg";
-import iconWhatsapp from "@/assets/icons/rounded-imessage.svg";
-import iconLinkedin from "@/assets/icons/rounded-linkedin.svg";
-import iconInstagram from "@/assets/icons/rounded-instagram.svg";
 
 export default function ContactPage() {
   return (
     <section id="CONTACT" className={styles.contact}>
+
       <div className={styles.container}>
+
         <article className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
-            src={iconWhatsapp}
+            src="/assets/icons/rounded-imessage.svg"
             alt="Whatsapp icon"
             width={50}
             height={50}
@@ -29,7 +25,7 @@ export default function ContactPage() {
         <article className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
-            src={iconLinkedin}
+            src="/assets/icons/rounded-linkedin.svg"
             alt="Linkedin icon"
             width={50}
             height={50}
@@ -44,7 +40,7 @@ export default function ContactPage() {
         <article className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
-            src={iconInstagram}
+            src="/assets/icons/rounded-instagram.svg"
             alt="Instagram icon"
             width={50}
             height={50}
@@ -55,12 +51,15 @@ export default function ContactPage() {
           <span>instagram.com/hiagoisoppo</span>
           <a href="https://www.instagram.com/hiagoisoppo" target="_blank"></a>
         </article>
+
       </div>
+
       <div className={styles.container}>
+
         <article className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
-            src={iconEmail}
+            src="/assets/icons/rounded-email.svg"
             alt="Email icon"
             width={50}
             height={50}
@@ -75,7 +74,7 @@ export default function ContactPage() {
         <article className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
-            src={iconGithub}
+            src="/assets/icons/rounded-githubalt.svg"
             alt="Github icon"
             width={50}
             height={50}
@@ -90,7 +89,7 @@ export default function ContactPage() {
         <article className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
-            src={iconCurriculum}
+            src="/assets/icons/rounded-appstorealt.svg"
             alt="Download icon"
             width={50}
             height={50}
@@ -101,14 +100,9 @@ export default function ContactPage() {
           <span>hiagoisoppo.dev/cv</span>
           <a href="/CV-HiagoIsoppo.pdf" download></a>
         </article>
+
       </div>
-      {/* <a href="#HOME" className={styles.linkWrapper}>
-        Volte ao topo!
-        <div>
-          <div className={styles.arrow}></div>
-          <div className={styles.bar}></div>
-        </div>
-      </a> */}
+
     </section>
   );
 }

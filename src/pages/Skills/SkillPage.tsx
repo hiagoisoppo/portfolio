@@ -1,39 +1,11 @@
 import styles from "./skillspage.module.css";
 import Image from "next/image";
-import iconNextJs from "@/assets/icons/nextjs.svg";
-import iconReact from "@/assets/icons/react.svg";
-import iconGit from "@/assets/icons/git.svg";
-import iconDocker from "@/assets/icons/docker.svg";
-import iconDotnet from "@/assets/icons/dotnet.svg";
-import iconNodejs from "@/assets/icons/nodejs.svg";
-import iconTypescript from "@/assets/icons/file-type-typescript-official.svg";
-import iconCsharp from "@/assets/icons/csharp.svg";
-import iconPython from "@/assets/icons/python.svg";
-import iconRabbitMQ from "@/assets/icons/rabbitmq.svg";
-import iconMySQL from "@/assets/icons/file-type-mysql.svg";
-import iconSQLServer from "@/assets/icons/sql-database-sql-azure.svg";
-import iconFirebase from "@/assets/icons/file-type-firebase.svg";
-import iconJwt from "@/assets/icons/jsonwebtokens.svg";
-import iconMocha from "@/assets/icons/file-type-mocha.svg";
-import iconCypress from "@/assets/icons/cypress.svg";
-import iconJest from "@/assets/icons/file-type-jest.svg";
-import iconXunit from "@/assets/icons/xUnit.png";
-import iconRtl from "@/assets/icons/octopus-128x128.png";
-import iconGpt from "@/assets/icons/ChatGPT_logo.png";
-import iconRedux from "@/assets/icons/redux-original.svg";
-import iconJs from "@/assets/icons/javascript.svg";
-import iconHtml from "@/assets/icons/file-type-html.svg";
-import iconCss from "@/assets/icons/css3.svg";
-import iconSass from "@/assets/icons/sass.svg";
-import iconTail from "@/assets/icons/tailwind-css.svg";
-import iconBoot from "@/assets/icons/bootstrap.svg";
-import iconSequelize from "@/assets/icons/sequelize.svg";
 
 export default function SkillsPage() {
   return (
     <section id="SKILLS" className={styles.skills}>
       <article className={styles.content}>
-        <h2>FRONTEND</h2>
+        <h2>Frontend</h2>
         <div className={styles.aboutWrapper}>
           <p>
             Como desenvolvedor frontend minha abordagem é centrada no usuário
@@ -45,104 +17,130 @@ export default function SkillsPage() {
           <ul>
             <li>
               <Image
-                src={iconGit}
+                src="/assets/icons/git.svg"
                 alt="Icone do Git"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Git
             </li>
             <li>
               <Image
-                src={iconNextJs}
+                src="/assets/icons/nextjs.svg"
                 alt="Icone do NextJs"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Next.js
             </li>
             <li>
               <Image
-                src={iconReact}
+                src="/assets/icons/react.svg"
                 alt="Icone do React"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               React
             </li>
             <li>
               <Image
-                src={iconRedux}
+                src="/assets/icons/redux-original.svg"
                 alt="Icone do Redux"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Redux
             </li>
             <li>
               <Image
-                src={iconJwt}
+                src="/assets/icons/jsonwebtokens.svg"
                 alt="Icone do JsonWebToken"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               JWT
             </li>
             <li>
               <Image
-                src={iconJs}
+                src="/assets/icons/javascript.svg"
                 alt="Icone do Javascript"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Javascript
             </li>
             <li>
               <Image
-                src={iconHtml}
+                src="/assets/icons/file-type-html.svg"
                 alt="Icone do HTML"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               HTML
             </li>
             <li>
               <Image
-                src={iconCss}
+                src="/assets/icons/css3.svg"
                 alt="Icone do CSS"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               CSS
             </li>
             <li>
               <Image
-                src={iconSass}
+                src="/assets/icons/sass.svg"
                 alt="Icone do Sass"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Sass
             </li>
             <li>
               <Image
-                src={iconTail}
+                src="/assets/icons/tailwind-css.svg"
                 alt="Icone do TailwindCss"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Tailwind
             </li>
             <li>
               <Image
-                src={iconBoot}
+                src="/assets/icons/bootstrap.svg"
                 alt="Icone do Bootstrap"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Bootstrap
             </li>
             <li>
               <Image
-                src={iconRtl}
+                src="/assets/icons/octopus-128x128.png"
                 alt="Icone do TestingLibrary"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               RTL
             </li>
             <li>
               <Image
-                src={iconCypress}
+                src="/assets/icons/cypress.svg"
                 alt="Icone do Cypress"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Cypress
@@ -152,7 +150,7 @@ export default function SkillsPage() {
       </article>
 
       <article className={styles.content}>
-        <h2>BACKEND</h2>
+        <h2>Backend</h2>
         <div className={styles.aboutWrapper}>
           <p>
             Atuando como desenvolvedor backend, meu foco está em três pilares
@@ -163,112 +161,140 @@ export default function SkillsPage() {
           <ul>
             <li>
               <Image
-                src={iconDocker}
+                src="/assets/icons/docker.svg"
                 alt="Icone do Docker"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Docker
             </li>
             <li>
               <Image
-                src={iconTypescript}
+                src="/assets/icons/file-type-typescript-official.svg"
                 alt="Icone do Typescript"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Typescript
             </li>
             <li>
               <Image
-                src={iconNodejs}
+                src="/assets/icons/nodejs.svg"
                 alt="Icone do NodeJs"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               NodeJs
             </li>
             <li>
               <Image
-                src={iconCsharp}
+                src="/assets/icons/csharp.svg"
                 alt="Icone do Csharp"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               C#
             </li>
             <li>
               <Image
-                src={iconDotnet}
-                alt="Icone do .Net"
+                src="/assets/icons/dotnet.svg"
+                alt="Icone do ASP.Net"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
-              .Net
+              ASP.Net
             </li>
             <li>
               <Image
-                src={iconPython}
+                src="/assets/icons/python.svg"
                 alt="Icone do Python"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Python
             </li>
             <li>
               <Image
-                src={iconRabbitMQ}
+                src="/assets/icons/rabbitmq.svg"
                 alt="Icone do RabbitMQ"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               RabbitMQ
             </li>
             <li>
               <Image
-                src={iconMySQL}
+                src="/assets/icons/file-type-mysql.svg"
                 alt="Icone do MySQL"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               MySQL
             </li>
             <li>
               <Image
-                src={iconSQLServer}
+                src="/assets/icons/sql-database-sql-azure.svg"
                 alt="Icone do SQLServer"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               SQLServer
             </li>
             <li>
               <Image
-                src={iconFirebase}
+                src="/assets/icons/file-type-firebase.svg"
                 alt="Icone do Firebase"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Firebase
             </li>
             <li>
               <Image
-                src={iconSequelize}
+                src="/assets/icons/sequelize.svg"
                 alt="Icone do Sequelize"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Sequelize
             </li>
             <li>
               <Image
-                src={iconMocha}
+                src="/assets/icons/file-type-mocha.svg"
                 alt="Icone do Mocha"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Mocha
             </li>
             <li>
               <Image
-                src={iconJest}
+                src="/assets/icons/file-type-jest.svg"
                 alt="Icone do Jest"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               Jest
             </li>
             <li>
               <Image
-                src={iconXunit}
+                src="/assets/icons/xUnit.png"
                 alt="Icone do xUnit"
+                width={256}
+                height={256}
                 className={styles.flags}
               />
               xUnit
@@ -276,14 +302,6 @@ export default function SkillsPage() {
           </ul>
         </div>
       </article>
-
-      {/* <a href="#PROJECTS" className={styles.linkWrapper}>
-        Conheça meus projetos
-        <div>
-          <div className={styles.bar}></div>
-          <div className={styles.arrow}></div>
-        </div>
-      </a> */}
     </section>
   );
 }
