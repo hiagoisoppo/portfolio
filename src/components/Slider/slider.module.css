@@ -166,12 +166,11 @@
   }
 }
 /******************* MEDIA QUERY ******************/
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
     height: 70%;
   }
-  /******************* MAIN ARTICLE *******************/
   .project {
     width: 50%;
     height: 100%;
@@ -183,8 +182,6 @@
     flex-shrink: 0;
     justify-content: flex-start;
   }
-  
-  /******************* SYMBOL BACKGROUND *******************/
   .symbol {
     position: absolute;
     height: 100%;
@@ -200,8 +197,6 @@
   .project:hover .symbol {
     clip-path: polygon(0% 0%, 0% calc(100% - 2rem), 100% calc(100% - 2rem), 100% 0%);
   }
-  
-  /******************* YELLOW LIGHT *******************/
   .emblem {
     position: absolute;
     bottom: 0;
@@ -214,8 +209,6 @@
   .project:hover .emblem {
     animation: none;
   }
-  
-  /******************* IMAGE *******************/
   .image {
     position: absolute;
     bottom: 2rem;
@@ -230,8 +223,6 @@
     width: 80%;
     height: fit-content;
   }
-  
-  /******************* TITLE *******************/
   .project h3 {
     height: fit-content;
     transform: rotate(-90deg) translateX(-22rem);
@@ -239,8 +230,6 @@
   .project:hover h3 {
     transform: rotate(0deg);
   }
-
-  /******************* DESCRIPTION *******************/
   .project p {
     opacity: 0;
     width: 0;
@@ -253,8 +242,6 @@
     width: fit-content;
     height: fit-content;
   }
-  
-  /******************* BUTTONS *******************/
   .buttonWrapper {
     display: flex;
     justify-content: space-evenly;
@@ -298,4 +285,4 @@
     width: 5rem;
     height: 5rem;
   }
-}
+} */
