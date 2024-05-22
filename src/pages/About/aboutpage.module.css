@@ -6,17 +6,25 @@
   flex-direction: column;
   height: fit-content;
   width: 100%;
-  gap: 8rem;
-  padding-top: 8rem;
+  gap: 1rem;
 }
-
+/* CONTAINER IMAGE/HOBBIES/LANGUAGES */
+.containerProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 90%;
+  gap: 4rem;
+}
 /* PHOTO */
 .image {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 45vh;
+  height: 40vh;
   animation: 10000ms ease-in-out infinite float;
   aspect-ratio: 3/4;
 }
@@ -52,51 +60,40 @@
 }
 .logoWrapper {
   position: absolute;
-  height: 65vh;
+  height: 55vh;
   opacity: 0.2;
   z-index: -100;
   animation: roll 10000ms ease-in-out infinite;
   aspect-ratio: 1/1;
 }
-
-/* BLOCO ABOUT + LANGUAGES */
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: fit-content;
-  width: 90%;
-  gap: 2rem;
-}
 /* BLOCO SOBRE MIM */
-.aboutWrapper {
+.containerAbout {
   display: flex;
   position: relative;
-  align-items: start;
+  height: 100vh;
   justify-content: center;
-  flex-direction: column;
-  padding-left: 1rem;
-}
-.content h2 {
-  display: flex;
-  margin: 0;
   align-items: center;
-  padding-left: 1em;
+  flex-direction: column;
+  width: 90%;
+}
+.containerAbout h2 {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-left: .5em;
   height: 2em;
   color: var(--primary-color);
-  font-size: 4rem;
+  font-size: 3rem;
   width: 100%;
-  opacity: 1;
-  background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 120% 100%;
+  background-image: linear-gradient(to right, var(--secondary-color), transparent 85%);
+  background-size: 200% 100%;
   animation: 8s ease infinite gradient;
 }
-.aboutWrapper p, .languagesWrapper ul {
-  font-size: 2.5rem;
-  padding-left: 1.5rem;
+.containerAbout p {
+  font-size: 1.5rem;
+  padding-left: 1em;
 }
-.aboutWrapper p::after {
+.containerAbout p::after {
   content: '';
   display: block;
   position: absolute;
@@ -108,7 +105,7 @@
   margin-top: 1rem;
   animation: 3000ms ease-in-out infinite blink;
 }
-.aboutWrapper p::before {
+.containerAbout p::before {
   content: '';
   display: block;
   position: absolute;
@@ -121,55 +118,47 @@
   animation: 3000ms ease-in-out infinite blink;
   box-shadow: 0 0 .5rem .3rem var(--tertiary-color-op);
 }
-
-/* BLOCO DE LINAGUENS */
-.languagesWrapper {
+/* BLOCO DE LINAGUENS/HOBBIES */
+.profileWrapper {
   display: flex;
   align-items: start;
+  justify-content: center;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  gap: 1rem;
 }
-
-.languagesWrapper li {
+.profileWrapper li {
   font-size: 1.5rem;
 }
-
-.languagesWrapper h3 {
-  font-size: 2rem;
+.profileWrapper h3 {
+  text-transform: uppercase;
   display: flex;
-  margin: 0;
-  margin-bottom: 2rem;
   align-items: center;
-  padding-left: 1rem;
-  height: 4rem;
+  padding-left: .5em;
+  height: 2em;
+  font-size: 2rem;
   color: var(--primary-color);
   width: 100%;
-  opacity: 1;
-  background-image: linear-gradient(to right, var(--secondary-color), transparent);
-  background-size: 150% 100%;
-  animation: 3s ease-in-out infinite gradient;
+  background-image: linear-gradient(to right, var(--secondary-color), transparent 85%);
+  background-size: 200% 100%;
+  animation: 8s ease infinite gradient;
 }
-
-
-
-.languages
-{
-  width: 32%;
+.languages, .hobbies {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
 }
-.hobbies {
-  width: 62%;
-}
-
 .languages ul,
 .hobbies ul {
   display: flex;
   align-items: center;
   position: relative;
+  flex-direction: row;
   gap: 2rem;
   padding-left: 2rem;
 }
-
 .languages li,
 .hobbies li {
   display: flex;
@@ -177,25 +166,12 @@
   align-items: center;
   flex-direction: column;
 }
-
 .flags {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   margin-bottom: .5rem;
   border-radius: .5rem;
-  filter: grayscale(100%);
 }
-
-.hobbies li:hover,
-.languages li:hover {
-  color: var(--tertiary-color);
-}
-
-.hobbies li:hover img,
-.languages li:hover img  {
-  filter: grayscale(0%);
-}
-
 .languages ul::after, .hobbies ul::after {
   content: '';
   display: block;
@@ -208,7 +184,6 @@
   margin-top: 1rem;
   animation: 3000ms ease-in-out infinite blink;
 }
-
 .languages ul::before, .hobbies ul::before {
   content: '';
   display: block;
@@ -222,60 +197,18 @@
   animation: 3000ms ease-in-out infinite blink;
   box-shadow: 0 0 .5rem .3rem var(--tertiary-color-op);
 }
-
-
-
-.bar{
-  width: 10rem;
-  height: .2rem;
-  background-color: var(--tertiary-color);
-}
-
-.arrow {
-  background-color: var(--tertiary-color);
-  width: 2rem;
-  height: 2rem;
-  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-}
-
-.linkWrapper {
-  position: absolute;
-  bottom: 2rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  flex-direction: column;
-  font-size: 2rem;
-}
-
-.linkWrapper:hover {
-  color: var(--tertiary-color);
-}
-
-.linkWrapper div:first-of-type {
-  filter: drop-shadow(0 0 1rem var(--tertiary-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: .5rem;
-  animation: 3000ms ease-in-out infinite blink;
-}
-
 /* ANIMATIONS */
 @keyframes gradient {
   0% {
-    background-position: 100% 50%;
+    background-position: 70% 50%;
   }
 
   50% {
-    background-position: 75% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-    background-position: 100% 50%;
+    background-position: 70% 50%;
   }
 }
 @keyframes blink {

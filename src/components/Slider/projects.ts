@@ -1,68 +1,65 @@
 export const projects = [
   {
-    title: "Timer and Stopwatch",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    deploy: "https://sandrords.github.io/rds-games/",
-    repository: "TESTANDO",
-    preview:
-      "https://raw.githubusercontent.com/hiagoisoppo/timer-and-stopwatch/main/public/Preview.png",
-    previewHover: "",
-    tags: ["React", "TypeScript", "CSS", "HTML", "React", "TypeScript", "CSS", "HTML", "React", "TypeScript"],
+    stack: "Backend",
+    title: "Trybe Hotel",
+    description: "Aplicação web API REST desenvolvida em ASP.NET, com o objetivo de gerenciar uma empresa de hotelaria, com diversas sedes, através de CRUD e armazená-las em um banco de dados.",
+    deploy: "",
+    repository: "https://github.com/hiagoisoppo/trybe-hotel",
+    preview: "https://raw.githubusercontent.com/hiagoisoppo/trybe-hotel/main/public/Preview.png",
+    tags: ["C#", "ASP.Net Core", "JwtBearer", "EntityFrameworkCore", "SqlServer", "Swagger", "Docker"],
   },
   {
+    stack: "Backend",
+    title: "TryBets",
+    description: "Uma RestAPI, desenvolvida em ASP.NET com o objetivo de gerenciar uma casa de apostas, através de um CRUD em microsserviços.",
+    deploy: "",
+    repository: "https://github.com/hiagoisoppo/trybets",
+    preview: "https://raw.githubusercontent.com/hiagoisoppo/trybets/main/public/Preview.png",
+    tags: ["C#", "ASP.Net Core", "JwtBearer", "EntityFrameworkCore", "SqlServer", "Swagger", "Docker"],
+  },
+  {
+    stack: "Backend",
+    title: "API Blog",
+    description: "Uma REST API, desenvolvida com o objetivo de gerenciar através de um CRUD as postagens de um blog e armazenalas em um banco de dados, com as seguranças e validações necessarias.",
+    deploy: "",
+    repository: "https://github.com/hiagoisoppo/api-blog",
+    preview: "https://raw.githubusercontent.com/hiagoisoppo/api-blog/main/public/Preview.png",
+    tags: ["JavaScript", "NodeJs", "MySQL", "Sequelize", "Mocha", "JsonWebToken", "Express", "Docker"],
+  },
+  {
+    stack: "Frontend",
     title: "Gourmet Guidance",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    deploy: "",
-    repository: "TESTANDO",
-    preview:
-      "https://raw.githubusercontent.com/hiagoisoppo/gourmet-guidance/main-group-5/public/Preview.png",
-    previewHover: "",
-    tags: ["React", "TypeScript", "CSS", "HTML"],
+    description: "Aplicação web que funciona como um guia gourmet para entusiastas da culinária e da bebida.",
+    deploy: "https://gourmet-guidance.vercel.app/",
+    repository: "https://github.com/hiagoisoppo/gourmet-guidance",
+    preview:"https://raw.githubusercontent.com/hiagoisoppo/gourmet-guidance/main-group-5/public/Preview.png",
+    tags: ["TypeScript", "Docker", "ReactJs", "Redux", "Bootstrap", "Cypress", "Mocha", "Sass"],
   },
   {
-    title: "Hit News",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    deploy: "TESTANDO",
-    repository: "TESTANDO",
-    preview:
-      "https://raw.githubusercontent.com/hiagoisoppo/hit-news/main/public/Preview.png",
-    previewHover: "",
-    tags: ["React", "TypeScript", "CSS", "HTML"],
-  },
-  {
-    title: "Exchange House",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    deploy: "TESTANDO",
-    repository: "TESTANDO",
-    preview:
-      "https://raw.githubusercontent.com/hiagoisoppo/exchange-house/master/public/Preview.png",
-    previewHover: "",
-    tags: ["React", "TypeScript", "CSS", "HTML"],
-  },
-  {
-    title: "Blog Api",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    deploy: "",
-    repository: "TESTANDO",
-    preview:
-      "https://raw.githubusercontent.com/hiagoisoppo/api-blog/hiago-isoppo-blogs-api/public/Preview.png",
-    previewHover: "",
-    tags: ["React", "TypeScript", "CSS", "HTML"],
-  },
-  {
+    stack: "Fullstack",
     title: "Trybe Futebol Clube",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Aplicação web full stack, desenvolvida em monorepo com o objetivo de registrar e organizar a pontuação em um campeonato de futebol fictício.",
     deploy: "",
-    repository: "TESTANDO",
-    preview:
-      "https://raw.githubusercontent.com/hiagoisoppo/trybe-futebol-club/hiago-isoppo-sd-032-project-trybe-futebol-clube/public/Preview.png",
-    previewHover: "",
-    tags: ["React", "TypeScript", "CSS", "HTML"],
+    repository: "https://github.com/hiagoisoppo/trybe-futebol-club",
+    preview: "https://raw.githubusercontent.com/hiagoisoppo/trybe-futebol-club/hiago-isoppo-sd-032-project-trybe-futebol-clube/public/Preview.png",
+    tags: ["TypeScript", "Docker", "ReactJs", "Puppeteer", "Axios", "Mocha", "TsNode", "Express", "Sequelize", "MySQL"],
+  },
+  {
+    stack: "Frontend",
+    title: "HIT News",
+    description: "Aplicação web desenvolvida com o objetivo de distribuir e organizar as notícias mais recentes, disponibilizadas através da API do IBGE.",
+    deploy: "https://hitnews.vercel.app/",
+    repository: "https://github.com/hiagoisoppo/hit-news",
+    preview: "https://raw.githubusercontent.com/hiagoisoppo/hit-news/main/public/Preview.png",
+    tags: ["TypeScript", "ReactJs", "TailwindCSS", "PostCss", "ReactTestingLibrary", "Vitest"],
+  },
+  {
+    stack: "Frontend",
+    title: "Portfólio",
+    description: "Portfólio profissional, desenvolvido com o objetivo de apresentar meus projetos e habilidades.",
+    deploy: "https://hiagoisoppo.dev/",
+    repository: "https://github.com/hiagoisoppo/portfolio",
+    preview: "",
+    tags: ["NextJs", "ReactJs", "TypeScript", "CSS Modules", "Framer Motion"],
   },
 ];
