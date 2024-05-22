@@ -1,11 +1,10 @@
 .projects {
   display: flex;
   position: relative;
-  align-items: center;
   justify-content: center;
-  height: fit-content;
+  align-items: center;
+  height: 100vh;
   width: 100%;
-  flex-direction: column;
 }
 /* MEDIA QUERYS */
 @media screen and (min-width: 360px) {

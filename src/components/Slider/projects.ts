@@ -2,7 +2,7 @@ export const projects = [
   {
     stack: "Backend",
     title: "Trybe Hotel",
-    description: "Aplicação web API REST desenvolvida em ASP.NET, com o objetivo de gerenciar uma empresa de hotelaria, com diversas sedes, através de CRUD e armazená-las em um banco de dados.",
+    description: "Uma API REST desenvolvida em ASP.NET, com o objetivo de gerenciar uma empresa de hotelaria, com diversas sedes, através de CRUD e armazená-las em um banco de dados.",
     deploy: "",
     repository: "https://github.com/hiagoisoppo/trybe-hotel",
     preview: "https://raw.githubusercontent.com/hiagoisoppo/trybe-hotel/main/public/Preview.png",
