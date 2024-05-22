@@ -85,14 +85,17 @@ export default function SliderMotion() {
                   ) : null}
                   {projects[projectIndex].repository ? (
                     <li>
-                      <a href={projects[projectIndex].repository} target="_blank">
+                      <a
+                        href={projects[projectIndex].repository}
+                        target="_blank"
+                      >
                         <Image
                           src="/assets/icons/github.svg"
                           alt="Repositorie"
                           width={12}
                           height={12}
-                        />
-                        Repositório
+                          />
+                          Repositório
                       </a>
                     </li>
                   ) : null}

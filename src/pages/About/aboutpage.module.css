@@ -75,6 +75,15 @@
   align-items: center;
   flex-direction: column;
   width: 90%;
+  gap: 1rem;
+}
+.insideAbout {
+  display: flex;
+  position: relative;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 1rem;
 }
 .containerAbout h2 {
   text-transform: uppercase;
@@ -89,29 +98,29 @@
   background-size: 200% 100%;
   animation: 8s ease infinite gradient;
 }
-.containerAbout p {
-  font-size: 1.5rem;
+.insideAbout p {
+  font-size: 1.6rem;
   padding-left: 1em;
 }
-.containerAbout p::after {
+.insideAbout p::after {
   content: '';
   display: block;
   position: absolute;
   left: 0;
   top: -1rem;
-  width: .5rem;
+  width: .3rem;
   height: 100%;
   background-color: var(--tertiary-color);
   margin-top: 1rem;
   animation: 3000ms ease-in-out infinite blink;
 }
-.containerAbout p::before {
+.insideAbout p::before {
   content: '';
   display: block;
   position: absolute;
   left: 0;
   top: -1rem;
-  width: .5rem;
+  width: .3rem;
   height: 100%;
   background-color: var(--tertiary-color);
   margin-top: 1rem;
@@ -170,7 +179,6 @@
   height: 4rem;
   width: 4rem;
   margin-bottom: .5rem;
-  border-radius: .5rem;
 }
 .languages ul::after, .hobbies ul::after {
   content: '';
@@ -178,7 +186,7 @@
   position: absolute;
   left: 0;
   top: -1rem;
-  width: .5rem;
+  width: .3rem;
   height: 100%;
   background-color: var(--tertiary-color);
   margin-top: 1rem;
@@ -190,7 +198,7 @@
   position: absolute;
   left: 0;
   top: -1rem;
-  width: .5rem;
+  width: .3rem;
   height: 100%;
   background-color: var(--tertiary-color);
   margin-top: 1rem;
@@ -260,269 +268,5 @@
   }
   0% {
     transform: rotate(0deg);
-  }
-}
-/* MEDIA QUERYS */
-@media screen and (min-width: 1024px) {
-  .about {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 100vh;
-    width: 75vw;
-    gap: 5rem;
-  }
-  
-  .image {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    height: calc(537px / 2 * 1.8);
-    aspect-ratio: 1/1.4;
-    animation: 3000ms ease-in-out infinite float;
-    flex-shrink: 0;
-  }
-  
-  .photo {
-    position: absolute;
-    clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0%);
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-  }
-  
-  .symbol {
-    position: absolute;
-    clip-path: polygon(0% 30%, 0% 80%, 50% 100%, 100% 80%, 100% 30%, 50% 0);
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, var(--secondary-color), transparent);
-    background-size: 100% 250%;
-  }
-  
-  .emblemWrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(.1rem .5rem .4rem var(--tertiary-color));
-  }
-  .emblem {
-    position: absolute;
-    clip-path: polygon(0% 79%, 0% 80%, 50% 100%, 100% 80%, 100% 79%, 50% 99%);
-    width: 100%;
-    height: 100%;
-    background-color: var(--tertiary-color);
-    transform: translateY(1.5rem);
-    animation: 3000ms ease-in-out infinite blink;
-  }
-  
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: auto;
-    gap: 2rem;
-  }
-  
-  .aboutWrapper {
-    display: flex;
-    position: relative;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 1rem;
-  }
-  
-  .content h2 {
-    display: flex;
-    margin: 0;
-    align-items: center;
-    padding-left: 1rem;
-    height: 5rem;
-    color: var(--primary-color);
-    font-size: 3rem;
-    width: 100%;
-    opacity: 1;
-    background-image: linear-gradient(to right, var(--secondary-color), transparent);
-    background-size: 120% 100%;
-    animation: 8s ease infinite gradient;
-  }
-  
-  .aboutWrapper p, .languagesWrapper ul {
-    font-size: 1.5rem;
-    padding-left: 1.5rem;
-  }
-  
-  .aboutWrapper p::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -1rem;
-    width: .5rem;
-    height: 100%;
-    background-color: var(--tertiary-color);
-    margin-top: 1rem;
-    animation: 3000ms ease-in-out infinite blink;
-  }
-  
-  .aboutWrapper p::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -1rem;
-    width: .5rem;
-    height: 100%;
-    background-color: var(--tertiary-color);
-    margin-top: 1rem;
-    animation: 3000ms ease-in-out infinite blink;
-    box-shadow: 0 0 .5rem .3rem var(--tertiary-color-op);
-  }
-  
-  .languagesWrapper {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-  }
-  
-  .languagesWrapper li {
-    font-size: 1.5rem;
-  }
-  
-  .languagesWrapper h3 {
-    font-size: 2rem;
-    display: flex;
-    margin: 0;
-    margin-bottom: 2rem;
-    align-items: center;
-    padding-left: 1rem;
-    height: 4rem;
-    color: var(--primary-color);
-    width: 100%;
-    opacity: 1;
-    background-image: linear-gradient(to right, var(--secondary-color), transparent);
-    background-size: 150% 100%;
-    animation: 3s ease-in-out infinite gradient;
-  }
-  
-  
-  
-  .languages
-  {
-    width: 32%;
-  }
-  .hobbies {
-    width: 62%;
-  }
-  
-  .languages ul,
-  .hobbies ul {
-    display: flex;
-    align-items: center;
-    position: relative;
-    gap: 2rem;
-    padding-left: 2rem;
-  }
-  
-  .languages li,
-  .hobbies li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .flags {
-    height: 5rem;
-    width: 5rem;
-    margin-bottom: .5rem;
-    border-radius: .5rem;
-    filter: grayscale(100%);
-  }
-  
-  .hobbies li:hover,
-  .languages li:hover {
-    color: var(--tertiary-color);
-  }
-  
-  .hobbies li:hover img,
-  .languages li:hover img  {
-    filter: grayscale(0%);
-  }
-  
-  .languages ul::after, .hobbies ul::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -1rem;
-    width: .5rem;
-    height: 100%;
-    background-color: var(--tertiary-color);
-    margin-top: 1rem;
-    animation: 3000ms ease-in-out infinite blink;
-  }
-  
-  .languages ul::before, .hobbies ul::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -1rem;
-    width: .5rem;
-    height: 100%;
-    background-color: var(--tertiary-color);
-    margin-top: 1rem;
-    animation: 3000ms ease-in-out infinite blink;
-    box-shadow: 0 0 .5rem .3rem var(--tertiary-color-op);
-  }
-  
-  
-  
-  .bar{
-    width: 10rem;
-    height: .2rem;
-    background-color: var(--tertiary-color);
-  }
-  
-  .arrow {
-    background-color: var(--tertiary-color);
-    width: 2rem;
-    height: 2rem;
-    clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-  }
-  
-  .linkWrapper {
-    position: absolute;
-    bottom: 2rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    flex-direction: column;
-    font-size: 2rem;
-  }
-  
-  .linkWrapper:hover {
-    color: var(--tertiary-color);
-  }
-  
-  .linkWrapper div:first-of-type {
-    filter: drop-shadow(0 0 1rem var(--tertiary-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: .5rem;
-    animation: 3000ms ease-in-out infinite blink;
   }
 }

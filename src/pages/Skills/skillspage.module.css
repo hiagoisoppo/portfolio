@@ -37,7 +37,7 @@
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   gap: 2rem;
 }
 .aboutWrapper::after {
@@ -45,7 +45,7 @@
   display: block;
   position: absolute;
   left: 0;
-  width: .5rem;
+  width: .3rem;
   height: 100%;
   background-color: var(--tertiary-color);
   margin-top: 1rem;
@@ -56,7 +56,7 @@
   display: block;
   position: absolute;
   left: 0;
-  width: .5rem;
+  width: .3rem;
   height: 100%;
   background-color: var(--tertiary-color);
   margin-top: 1rem;

@@ -48,6 +48,7 @@
   background-color: var(--tertiary-color);
   animation: 3000ms ease-in-out infinite blink;
   box-shadow: 0 -.3rem .75rem .3rem var(--tertiary-color-op);
+  z-index: -1;
 }
 /******************* IMAGE *******************/
 .image {
@@ -117,6 +118,7 @@
   font-size: 1.5rem;
   color: var(--tertiary-color);
   gap: .5rem;
+  cursor: pointer;
 }
 .buttonWrapper img {
   width: 4rem;
