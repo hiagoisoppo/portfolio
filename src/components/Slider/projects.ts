@@ -23,7 +23,7 @@ export const projects = [
     description: "Uma REST API, desenvolvida com o objetivo de gerenciar através de um CRUD as postagens de um blog e armazenalas em um banco de dados, com as seguranças e validações necessarias.",
     deploy: "",
     repository: "https://github.com/hiagoisoppo/api-blog",
-    preview: "https://raw.githubusercontent.com/hiagoisoppo/api-blog/main/public/Preview.png",
+    preview: "https://raw.githubusercontent.com/hiagoisoppo/api-blog/hiago-isoppo-blogs-api/public/Preview.png",
     tags: ["JavaScript", "NodeJs", "MySQL", "Sequelize", "Mocha", "JsonWebToken", "Express", "Docker"],
   },
   {

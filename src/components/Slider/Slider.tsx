@@ -50,7 +50,7 @@ export default function Slider() {
             </div>
             
             <Image
-              src="/assets/test.png"
+              src={project.preview}
               alt={project.description}
               width={1920}
               height={1080}
