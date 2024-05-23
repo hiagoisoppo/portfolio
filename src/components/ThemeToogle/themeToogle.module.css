@@ -1,0 +1,70 @@
+.container {
+  position: absolute;
+  z-index: 52;
+  top: 1rem;
+  right: 1rem;
+  height: 4rem;
+  aspect-ratio: 1/1;
+}
+
+.hBotShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(.1rem .5rem .4rem var(--tertiary-color));
+}
+
+.hBot {
+  position: absolute;
+  background-color: var(--tertiary-color);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 90%, 10% 70%, 10% 60%, 20% 65%, 50% 80%, 62.5% 73.5%, 55% 70%, 55% 50%, 72.5% 40%, 90% 50%, 90% 70%);
+  transform: translate(0, 0);
+  animation: blink 3000ms ease-in-out infinite;
+}
+
+.hTop {
+  position: absolute;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 90%, 10% 70%, 10% 60%, 20% 65%, 50% 80%, 62.5% 73.5%, 55% 70%, 55% 50%, 72.5% 40%, 90% 50%, 90% 70%);
+  transform: rotate(180deg);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}

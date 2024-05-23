@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { LanguageProvider } from "@/contexts/LanguageContext";
 import Layout from "@/components/Layout/Layout";
 import type { Viewport } from 'next'
  
@@ -25,9 +24,7 @@ export default function RootLayout({
     <html lang="pt-br" className="dark">
       <body>
         <Layout />
-        <LanguageProvider>
           {children}
-        </LanguageProvider>
       </body>
     </html>
   );

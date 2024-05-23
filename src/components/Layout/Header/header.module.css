@@ -5,19 +5,34 @@
   width: 100%;
   height: fit-content;
   display: flex;
-  justify-content: space-between;
-  z-index: 500;
+  z-index: 50;
   padding: 1rem;
 }
 /* INSIDE LEFT CONTAINER */
 .leftContainer {
   display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .5rem;
+  width: 15%;
+}
+.middleContainer {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  width: 70%;
+}
+.rightContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5rem;
+  width: 15%;
 }
 /* NAME TAG */
 .name {
+  display: none;
   color: var(--secondary-color);
   font-size: 2.5rem;
   font-style: normal;
@@ -30,6 +45,10 @@
 }
 /* LOGO */
 .logo {
+  position: absolute;
+  z-index: 51;
+  top: 1rem;
+  left: 1rem;
   aspect-ratio: 1/1;
   height: 4rem;
 }

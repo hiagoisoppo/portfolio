@@ -130,25 +130,38 @@
   top: calc(50%);
   transform: translateY(-50%);
   position: absolute;
-  background: var(--tertiary-color-op);
-  color: var(--primary-color);
-  border-radius: 1rem;
-  width: 3rem;
-  height: 4rem;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
   cursor: pointer;
-  font-size: 3rem;
-  z-index: 500;
-  line-height: 1em;
+  z-index: 49;
+  gap: .5rem;
+  filter: drop-shadow(.05rem .1rem .2rem var(--tertiary-color));
+  animation: 3000ms ease-in-out infinite blink;
 }
 .next {
   right: .5rem;
 }
 .prev {
   left: .5rem;
+}
+.arrow {
+  width: 2rem;
+  height: 5rem;
+  background-color: var(--tertiary-color);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.bar {
+  width: .3rem;
+  height: 5rem;
+  background-color: var(--tertiary-color);
+
+}
+.prev .arrow {
+  transform: rotate(180deg);
 }
 /******************* ANIMATIONS *******************/
 @keyframes blink {

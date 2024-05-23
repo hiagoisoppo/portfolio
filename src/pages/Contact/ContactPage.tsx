@@ -4,7 +4,7 @@ import styles from "./contactpage.module.css";
 export default function ContactPage() {
   return (
     <section id="CONTACT" className={styles.contact}>
-      <div className={styles.container}>
+      <article className={styles.container}>
         <div className={styles.link}>
           <span className={styles.linkBar}></span>
           <Image 
@@ -88,7 +88,7 @@ export default function ContactPage() {
           <p>Clique para acessar meu curriculo virtual, e fazer download do mesmo.</p>
           <a href="/CV-HiagoIsoppo.pdf" download></a>
         </div>
-      </div>
+      </article>
     </section>
   );
 }

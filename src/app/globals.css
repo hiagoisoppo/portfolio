@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .5s ease-in-out;
+  transition: all .1s linear;
 }
 html {
   font-family: "Ubuntu", sans-serif;
@@ -41,29 +41,16 @@ h1, h2, h3, h4, h5, h6, span {
   font-weight: 700;
   font-style: italic;
 }
-
-section {
-  scroll-snap-align: start;
-}
-
 article {
   scroll-snap-align: center;
 }
-
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 p {
   line-height: 1.4em;
 }
@@ -88,3 +75,24 @@ p {
   --secondary-color-op: #18181880;
   background-image: url("/assets/bgDark.svg");
 }
+html.dark nav {
+  background-image: url("/assets/bgDark.svg");
+}
+
+html.dark nav ul li {
+  background-image: linear-gradient(to right, var(--secondary-color), transparent);
+  color: var(--secondary-color);
+}
+
+/* MARCADOR DE CLICK OU DE POSICIONAMENTO DA TELA */
+li.mark {
+  opacity: 1;
+  filter: drop-shadow(.05rem .1rem .2rem var(--tertiary-color));
+  animation: 3000ms ease-in-out infinite blink;
+  font-size: 8rem;
+}
+li.mark a {
+  font-size: 5rem;
+  opacity: 1;
+}
+

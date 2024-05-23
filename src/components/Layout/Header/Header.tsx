@@ -1,28 +1,27 @@
 "use client";
-import ToogleTheme from '@/contexts/ToogleTheme';
+import { useState } from 'react';
 import Logo from '../../Logo/Logo';
 import NavMenu from './NavMenu/NavMenu';
 import style from './header.module.css';
+import ThemeToogle from '@/components/ThemeToogle/ThemeToogle';
 
 export default function Header(){
   return(
     <header className={style.header}>
       <div className={style.leftContainer}>
-        <div className={style.logo}>
+        <a className={style.logo} href='#HOME'>
           <Logo />
-        </div>
+        </a>
         <span className={style.name}>
           <span>Hiago</span> Isoppo
         </span>
       </div>
-      {/* <NavMenu /> */}
-      <button
-        onClick={() => {
-          ToogleTheme();
-        }}
-      >
-        TOOGLE
-      </button>
+      <div className={style.middleContainer}>
+        <NavMenu />
+      </div>
+      <div className={style.rightContainer}>
+        <ThemeToogle />
+      </div>
     </header>
   )
 }

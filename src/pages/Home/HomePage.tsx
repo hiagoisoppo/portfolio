@@ -12,7 +12,7 @@ export default function HomePage() {
         </h1>
       </div>
 
-      <div className={styles.image}>
+      <article className={styles.image}>
         <Image 
           src="/assets/homePic.png"
           alt="Foto de perfil"
@@ -27,7 +27,7 @@ export default function HomePage() {
         <div className={styles.logoWrapper}>
           <Logo />
         </div>
-      </div>
+      </article>
     </section>
   );
 }

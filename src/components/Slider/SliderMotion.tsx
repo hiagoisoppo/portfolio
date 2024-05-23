@@ -114,10 +114,12 @@ export default function SliderMotion() {
         </motion.div>
       </AnimatePresence>
       <div className={style.next} onClick={() => paginate(1)}>
-        {">"}
+        <span className={style.bar}></span>
+        <span className={style.arrow}></span>
       </div>
       <div className={style.prev} onClick={() => paginate(-1)}>
-        {"<"}
+      <span className={style.arrow}></span>
+        <span className={style.bar}></span>
       </div>
     </>
   );
