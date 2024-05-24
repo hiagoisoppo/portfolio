@@ -1,6 +1,6 @@
 import styles from "./certificatespage.module.css";
 import SliderMotion from "@/components/Slider/SliderMotion";
-import { certificates } from "./certificates";
+import { certificates } from "../../../public/certificates";
 
 export default function CertificatesPage() {
   return (
