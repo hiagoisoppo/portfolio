@@ -51,9 +51,32 @@
   z-index: -1;
 }
 /******************* IMAGE *******************/
-.image {
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 95%;
   height: fit-content;
+  position: relative;
+  padding: .1rem 0;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.imageWrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(.05rem .1rem .2rem var(--tertiary-color));
+  animation: 3000ms ease-in-out infinite blink;
+}
+.imageWrapper a img {
+  position: absolute;
+  right: -2rem;
+  bottom: 0rem;
+  transform: rotate(-50deg);
+  width: 6rem;
 }
 /******************* TITLE *******************/
 .project h3 {
@@ -63,9 +86,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
-  color: var(--tertiary-color);
-  filter: drop-shadow(.05rem .1rem .2rem var(--tertiary-color));
-  animation: 3000ms ease-in-out infinite blink;
+  color: var(--secondary-color);
   padding: 0 1rem;
 }
 /******************* DESCRIPTION *******************/

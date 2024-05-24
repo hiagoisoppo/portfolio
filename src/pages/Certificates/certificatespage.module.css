@@ -1,0 +1,15 @@
+.certificates {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+/* MEDIA QUERYS */
+@media screen and (min-width: 360px) {
+}
+@media screen and (min-width: 760px) {
+}
+@media screen and (min-width: 1020px) {
+}

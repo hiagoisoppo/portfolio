@@ -1,4 +1,6 @@
-export const projects = [
+import { SliderProps } from "@/components/Slider/SliderMotion";
+
+export const projects: SliderProps[]= [
   {
     stack: "Backend",
     title: "Trybe Hotel",
@@ -7,6 +9,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/trybe-hotel",
     preview: "",
     tags: ["C#", "ASP.Net Core", "JwtBearer", "EntityFrameworkCore", "SqlServer", "Swagger", "Docker"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Frontend",
@@ -16,6 +21,9 @@ export const projects = [
     repository: "",
     preview: "/assets/previews/PreviewLuifit.png",
     tags: ["ReactJs", "TypeScript", "HTML", "CSS", "NuvemShop"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Backend",
@@ -25,6 +33,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/trybets",
     preview: "/assets/previews/PreviewTrybets.png",
     tags: ["C#", "ASP.Net Core", "JwtBearer", "EntityFrameworkCore", "SqlServer", "Swagger", "Docker"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Backend",
@@ -34,6 +45,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/api-blog",
     preview: "/assets/previews/PreviewBlog.png",
     tags: ["JavaScript", "NodeJs", "MySQL", "Sequelize", "Mocha", "JsonWebToken", "Express", "Docker"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Frontend",
@@ -43,6 +57,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/gourmet-guidance",
     preview:"/assets/previews/PreviewGourmet.png",
     tags: ["TypeScript", "Docker", "ReactJs", "Redux", "Bootstrap", "Cypress", "Mocha", "Sass"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Fullstack",
@@ -52,6 +69,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/trybe-futebol-club",
     preview: "/assets/previews/PreviewTfc.png",
     tags: ["TypeScript", "Docker", "ReactJs", "Puppeteer", "Axios", "Mocha", "TsNode", "Express", "Sequelize", "MySQL"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Frontend",
@@ -61,6 +81,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/hit-news",
     preview: "/assets/previews/PreviewNews.png",
     tags: ["TypeScript", "ReactJs", "TailwindCSS", "PostCss", "ReactTestingLibrary", "Vitest"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Frontend",
@@ -70,6 +93,9 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/portfolio",
     preview: "",
     tags: ["NextJs", "ReactJs", "TypeScript", "CSS Modules", "Framer Motion"],
+    url: "",
+    institution: "",
+    date: "",
   },
   {
     stack: "Frontend",
@@ -79,15 +105,24 @@ export const projects = [
     repository: "https://github.com/hiagoisoppo/timer-and-stopwatch",
     preview: "/assets/previews/PreviewStopwatch.png",
     tags: ["NextJs", "ReactJs", "TypeScript", "CSS Modules", "Framer Motion"],
+    url: "",
+    institution: "",
+    date: "",
   },
 ];
 
 // {
-//   stack: "",
-//   title: "",
-//   description: "",
+///////PROJECTS ONLY/////////////////////////
 //   deploy: "",
 //   repository: "",
+//   stack: "",
+//////CERTIFICATES ONLY//////////////////////
+//   url: "",
+//   institution: "";
+//   date: "";
+//////FOR ALL///////////////////////////////
+//   title: "",
+//   description: "",
 //   preview: "",
 //   tags: ["", "", "", "", ""],
 // },

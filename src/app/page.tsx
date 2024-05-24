@@ -4,7 +4,7 @@ import AboutPage from "@/pages/About/AboutPage";
 import ProjectsPage from "@/pages/Projects/ProjectsPage";
 import ContactPage from "@/pages/Contact/ContactPage";
 import SkillsPage from "@/pages/Skills/SkillPage";
-import Logo from "@/components/Logo/Logo";
+import CertificatesPage from "@/pages/Certificates/CertificatesPage";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <SkillsPage />
       <ProjectsPage />
       <AboutPage />
+      <CertificatesPage />
       <ContactPage />
     </main>
   );

@@ -7,9 +7,16 @@ const nextConfig = {
         hostname: 'raw.githubusercontent.com',
         port: '',
         pathname: '/hiagoisoppo/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.accredible.com',
+        port: '',
+        pathname: '/**',
       }
     ]
   }
 };
 
 export default nextConfig;
+
