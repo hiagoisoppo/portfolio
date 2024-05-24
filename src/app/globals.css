@@ -25,7 +25,7 @@ html {
   font-style: normal;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  font-size: 8px;
+  font-size: 7px;
   background-attachment: fixed;
   background-color: var(--primary-color);
   background-image: url("/assets/bgLight.svg");
@@ -81,27 +81,22 @@ li.mark a {
 }
 @media screen and (min-width: 360px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 390px) {
   html {
-    font-size: 10.5px;
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 414px) {
   html {
-    font-size: 11px;
-  }
-}
-@media screen and (min-width: 430px) {
-  html {
-    font-size: 11.5px;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 760px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
   section {
     scroll-snap-align: start;
@@ -110,38 +105,33 @@ li.mark a {
     scroll-snap-align: none;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1020px) {
   html {
-    font-size: 14px;
+    font-size: 9px;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 1600px) {
   html {
     font-size: 10px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1900px) {
   html {
     font-size: 13px;
-  }
-}
-@media screen and (min-width: 1280px) and (min-height: 1020px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 1680px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 2048px) {
-  html {
-    font-size: 18px;
   }
 }

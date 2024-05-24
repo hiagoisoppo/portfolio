@@ -14,7 +14,7 @@
   justify-content: start;
   align-items: center;
   width: calc(100% - 8rem);
-  height: calc(100% - 13rem);
+  height: 75%;
   overflow: hidden;
   gap: 2rem;
 }
@@ -237,11 +237,6 @@
   }
 }
 /* MEDIA QUERY */
-@media screen and (min-width: 375px) {
-  .project {
-    height: calc(100% - 18rem);
-  }
-}
 @media screen and (min-width: 800px) {
   .project h3 {
     font-size: 3rem;
@@ -281,8 +276,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    width: 47.5%;
-    height: calc(100% - 12rem);
+    width: 30%;
+    height: 75%;
     overflow: hidden;
     gap: 2rem;
   }

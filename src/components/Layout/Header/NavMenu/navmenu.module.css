@@ -17,8 +17,8 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  height: 80%;
+  width: 80%;
+  height: 75%;
 }
 .link {
   display: flex;
@@ -151,12 +151,5 @@ span.hiddenMenu.arrow {
 
   100% {
     background-position: 100% 50%;
-  }
-}
-
-/* MEDIA QUERYS */
-@media screen and (min-width: 760px) {
-  .navmenu {
-    display: flex;
   }
 }

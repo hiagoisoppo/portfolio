@@ -50,6 +50,7 @@ export default function SliderMotion({ slider }: { slider: SliderProps[] }) {
   const [[page, direction], setPage] = useState([0, 0]);
   const projectIndex = wrap(0, slider.length, page);
   const projectIndex2 = wrap(0, slider.length, page+1);
+  const projectIndex3 = wrap(0, slider.length, page+2);
 
 
   const paginate = (newDirection: number) => {
@@ -222,6 +223,83 @@ export default function SliderMotion({ slider }: { slider: SliderProps[] }) {
                 <Image
                   src={slider[projectIndex2].preview}
                   alt={slider[projectIndex2].description}
+                  width={1920}
+                  height={1080}
+                  className={style.image}
+                />
+              </div>
+            </div>
+            <span className={style.symbol}></span>
+            <span className={style.emblem}></span>
+          </article>
+
+          <article className={`${style.project} ${style.projectB}`}>
+            <div className={style.insideContainer}>
+              <h3>{slider[projectIndex3].title}</h3>
+
+              <p>
+                {slider[projectIndex3].institution &&
+                slider[projectIndex3].date ? (
+                  <span>{`${slider[projectIndex3].institution} - ${slider[projectIndex3].date}`}</span>
+                ) : null}
+                {slider[projectIndex3].description}
+              </p>
+
+              <ul className={style.tags}>
+                {slider[projectIndex3].tags.map((tag, index) => {
+                  return <li key={index}>{tag}</li>;
+                })}
+              </ul>
+
+              <ul className={style.buttonWrapper}>
+                {slider[projectIndex3].deploy ? (
+                  <li>
+                    <a href={slider[projectIndex3].deploy} target="_blank">
+                      <Image
+                        src="/assets/icons/website.svg"
+                        alt="Deploy"
+                        width={12}
+                        height={12}
+                      />
+                      Deploy
+                    </a>
+                  </li>
+                ) : null}
+                {slider[projectIndex3].repository ? (
+                  <li>
+                    <a href={slider[projectIndex3].repository} target="_blank">
+                      <Image
+                        src="/assets/icons/github.svg"
+                        alt="Repositorie"
+                        width={12}
+                        height={12}
+                      />
+                      Repositório
+                    </a>
+                  </li>
+                ) : null}
+              </ul>
+              <div className={style.imageWrapper}>
+                <a
+                  href={
+                    slider[projectIndex3].url
+                      ? slider[projectIndex3].url
+                      : slider[projectIndex3].deploy
+                      ? slider[projectIndex3].deploy
+                      : slider[projectIndex3].repository
+                  }
+                  target="_blank"
+                >
+                  <Image
+                    src="/assets/icons/click.svg"
+                    alt="Icon Click to visit the project"
+                    width={50}
+                    height={50}
+                  />
+                </a>
+                <Image
+                  src={slider[projectIndex3].preview}
+                  alt={slider[projectIndex3].description}
                   width={1920}
                   height={1080}
                   className={style.image}
