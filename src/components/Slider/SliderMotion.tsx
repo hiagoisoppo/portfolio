@@ -49,6 +49,8 @@ const swipePower = (offset: number, velocity: number) => {
 export default function SliderMotion({ slider }: { slider: SliderProps[] }) {
   const [[page, direction], setPage] = useState([0, 0]);
   const projectIndex = wrap(0, slider.length, page);
+  const projectIndex2 = wrap(0, slider.length, page+1);
+
 
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
@@ -82,12 +84,7 @@ export default function SliderMotion({ slider }: { slider: SliderProps[] }) {
               <p>
                 {slider[projectIndex].institution &&
                 slider[projectIndex].date ? (
-                  <span>
-                    <strong>{slider[projectIndex].institution}</strong>
-                    <br />
-                    {slider[projectIndex].date}
-                    <br />
-                  </span>
+                  <span>{`${slider[projectIndex].institution} - ${slider[projectIndex].date}`}</span>
                 ) : null}
                 {slider[projectIndex].description}
               </p>
@@ -156,6 +153,86 @@ export default function SliderMotion({ slider }: { slider: SliderProps[] }) {
             <span className={style.symbol}></span>
             <span className={style.emblem}></span>
           </article>
+          
+
+          <article className={`${style.project} ${style.projectB}`}>
+            <div className={style.insideContainer}>
+              <h3>{slider[projectIndex2].title}</h3>
+
+              <p>
+                {slider[projectIndex2].institution &&
+                slider[projectIndex2].date ? (
+                  <span>{`${slider[projectIndex2].institution} - ${slider[projectIndex2].date}`}</span>
+                ) : null}
+                {slider[projectIndex2].description}
+              </p>
+
+              <ul className={style.tags}>
+                {slider[projectIndex2].tags.map((tag, index) => {
+                  return <li key={index}>{tag}</li>;
+                })}
+              </ul>
+
+              <ul className={style.buttonWrapper}>
+                {slider[projectIndex2].deploy ? (
+                  <li>
+                    <a href={slider[projectIndex2].deploy} target="_blank">
+                      <Image
+                        src="/assets/icons/website.svg"
+                        alt="Deploy"
+                        width={12}
+                        height={12}
+                      />
+                      Deploy
+                    </a>
+                  </li>
+                ) : null}
+                {slider[projectIndex2].repository ? (
+                  <li>
+                    <a href={slider[projectIndex2].repository} target="_blank">
+                      <Image
+                        src="/assets/icons/github.svg"
+                        alt="Repositorie"
+                        width={12}
+                        height={12}
+                      />
+                      Repositório
+                    </a>
+                  </li>
+                ) : null}
+              </ul>
+              <div className={style.imageWrapper}>
+                <a
+                  href={
+                    slider[projectIndex2].url
+                      ? slider[projectIndex2].url
+                      : slider[projectIndex2].deploy
+                      ? slider[projectIndex2].deploy
+                      : slider[projectIndex2].repository
+                  }
+                  target="_blank"
+                >
+                  <Image
+                    src="/assets/icons/click.svg"
+                    alt="Icon Click to visit the project"
+                    width={50}
+                    height={50}
+                  />
+                </a>
+                <Image
+                  src={slider[projectIndex2].preview}
+                  alt={slider[projectIndex2].description}
+                  width={1920}
+                  height={1080}
+                  className={style.image}
+                />
+              </div>
+            </div>
+            <span className={style.symbol}></span>
+            <span className={style.emblem}></span>
+          </article>
+
+
         </motion.div>
       </AnimatePresence>
       <div className={style.next} onClick={() => paginate(1)}>

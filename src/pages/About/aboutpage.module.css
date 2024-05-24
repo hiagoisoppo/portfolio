@@ -60,7 +60,7 @@
 }
 .logoWrapper {
   position: absolute;
-  height: 55vh;
+  height: 150%;
   opacity: 0.2;
   z-index: -100;
   animation: roll 10000ms ease-in-out infinite;
@@ -268,5 +268,70 @@
   }
   0% {
     transform: rotate(0deg);
+  }
+}
+/* MEDIA QUERYS */
+@media screen and (min-width: 760px) {
+  .about {
+    height: 100vh;
+    gap: 6rem;
+  }
+  .profileWrapper {
+    width: fit-content;
+  }
+  .containerProfile {
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-evenly;
+  }
+  .containerAbout {
+    height: fit-content;
+  }
+  .image {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 4rem;
+  }
+  .containerAbout {
+    height: fit-content;
+    width: 100%;
+    justify-content: start;
+  }
+  .containerProfile {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+  .profileWrapper {
+    flex-direction: row-reverse;
+    width: 75%;
+  }
+  .profileWrapper h3 {
+    font-size: 3rem;
+  }
+  .image {
+    padding-left: 8rem;
+    height: 100%;
+    animation: none;
+  }
+  .flags {
+    height: 4rem;
+    width: 4rem;
+  }
+  .languages {
+    width: 45%;
+  }
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
   }
 }

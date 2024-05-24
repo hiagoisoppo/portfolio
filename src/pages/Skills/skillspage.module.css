@@ -93,7 +93,6 @@
   padding: .5rem;
   animation: 6s ease infinite gradient2;
 }
-
 /* ANIMATIONS */
 @keyframes gradient {
   0% {
@@ -152,15 +151,48 @@
 }
 /* MEDIA QUERYS */
 @media screen and (min-width: 360px) {
+  .aboutWrapper ul {
+    row-gap: 1rem;
+    column-gap: 0rem;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 760px) {
+  .content {
+    height: fit-content;
+  }
+  .skills {
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+  }
+  .aboutWrapper p {
+    font-size: 1.8rem;
+  }
+  .content h2 {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 1020px) {
+  .skills {
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    gap: 2rem;
+  }
+  .content {
+    justify-content: start;
+    height: 75%;
+    gap: 1.5rem;
+  }
   .aboutWrapper li:hover {
-    color: var(--tertiary-color);
+    font-weight: 700;
   }
   .aboutWrapper li:hover img {
-    filter: grayscale(0%);
     background-image: linear-gradient(to bottom, var(--secondary-color), transparent);
+  }
+  .aboutWrapper ul {
+    row-gap: .5rem;
+    column-gap: .5rem;
   }
 }

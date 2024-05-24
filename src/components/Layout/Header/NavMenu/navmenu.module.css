@@ -24,7 +24,7 @@
   display: flex;
   position: relative;
   background-image: linear-gradient(to right, var(--primary-color), transparent);
-  background-size: 500% 100%;
+  background-size: 500% 300%;
   background-position-x: right;
   height: 100%;
   width: 100%;
@@ -86,6 +86,7 @@ span.hiddenMenu.arrow {
   flex-direction: column;
   z-index: 255;
   gap: .2rem;
+  filter: drop-shadow(.05rem .1rem .2rem var(--tertiary-color));
 }
 .menuTitle {
   font-size: 2rem;

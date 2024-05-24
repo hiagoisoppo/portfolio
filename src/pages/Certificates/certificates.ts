@@ -26,7 +26,7 @@ export const certificates: SliderProps[]= [
     repository: "",
   },
   {
-    title: "Módulo - Ciência da Computação",
+    title: "Módulo de Ciência da Computação",
     description: "Carga horária de 140 horas.",
     url: "https://www.credential.net/9e1aae72-beb7-4de1-bf41-52f661230d8a#gs.9ua0qa",
     institution: "Trybe",
@@ -38,7 +38,7 @@ export const certificates: SliderProps[]= [
     repository: "",
   },
   {
-    title: "Módulo - Desenvolvimento em Back End",
+    title: " Módulo de Desenvolvimento em Back End",
     description: "Carga horária de 410 horas.",
     url: "https://www.credential.net/dc4fe166-48c3-4e9c-8da7-745d2ad2e144#gs.9ua14h",
     institution: "Trybe",
@@ -50,7 +50,7 @@ export const certificates: SliderProps[]= [
     repository: "",
   },
   {
-    title: "Módulo - Front-End",
+    title: "Módulo de Front-End",
     description: "Carga horária de 405 horas.",
     url: "https://www.credential.net/8af7da4e-e234-4dd9-8f58-6f23d9f070f8#gs.9ua182",
     institution: "Trybe",

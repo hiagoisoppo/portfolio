@@ -66,7 +66,7 @@
 }
 .logoWrapper {
   position: absolute;
-  height: 65vh;
+  height: 150%;
   opacity: 0.2;
   z-index: -100;
   animation: roll 10000ms ease-in-out infinite;
@@ -125,9 +125,17 @@
   }
 }
 /* MEDIA QUERYS */
-@media screen and (min-width: 360px) {
-}
-@media screen and (min-width: 760px) {
-}
 @media screen and (min-width: 1020px) {
+  .home {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .title {
+    width: 45%;
+    font-size: 2.5rem;
+  }
+  .image {
+    height: 45%;
+  }
 }
