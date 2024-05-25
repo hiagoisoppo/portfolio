@@ -1,9 +1,13 @@
 "use client";
 
-import ToogleTheme from '@/contexts/ToogleTheme';
+import ToogleTheme, {DetectTheme} from '@/contexts/ToogleTheme';
 import style from './themeToogle.module.css';
+import { useEffect } from 'react';
 
 export default function ThemeToogle(){
+  useEffect(() => {
+    DetectTheme();
+  })
   return(
     <div
       className={style.container}

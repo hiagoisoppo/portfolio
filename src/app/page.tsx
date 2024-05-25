@@ -5,6 +5,7 @@ import ProjectsPage from "@/pages/Projects/ProjectsPage";
 import ContactPage from "@/pages/Contact/ContactPage";
 import SkillsPage from "@/pages/Skills/SkillPage";
 import CertificatesPage from "@/pages/Certificates/CertificatesPage";
+import Logo from "@/components/Logo/Logo";
 
 export default function Home() {
   return (
